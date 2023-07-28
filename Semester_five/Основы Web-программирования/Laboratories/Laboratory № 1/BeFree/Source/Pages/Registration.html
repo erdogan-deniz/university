@@ -1,0 +1,98 @@
+<script src="javascript.js">
+    function addTodo() {
+        var todo = document.getElementById("todo");
+        var todo2 = document.getElementById("todo2");
+        if (todo.value !== todo2.value) {
+            alert("Yours passwords do not match");
+        } else {
+            curatio.webdb.addTodo(todo.value);
+            todo.value = "";
+            alert("Your Registration was successfull");
+            setTimeout(function () {
+                window.location.href = "login.html";
+            }, 1000);
+        }
+    }
+</script>
+
+<h2 align="center"> Регистрация аккаунта </h2>
+<br>
+<br>
+<fieldset>
+    <label for="Login"> Введите ваше имя: </label>
+    <br>
+    <input id="Login" placeholder="Иван" type="text" style="margin-top: 3px">
+    <br>
+    <br>
+    <label for="Login"> Введите вашу фамилию: </label>
+    <br>
+    <input id="Login" placeholder="Иванов" type="text" style="margin-top: 3px">
+    <br>
+    <br>
+    <label for="start" style="margin-top: 5px"> Выберите дату рождения: </label>
+    <br>
+    <input type="date" id="start" name="trip-start" value="200-01-01" min="1960-01-01" max="2016-01-01"
+        style="margin-top: 3px">
+    <br>
+    <br>
+    <label for="Login"> Введите ваш логин: </label>
+    <br>
+    <input id="Login" placeholder="examplelogin" type="text" style="margin-top: 3px">
+    <br>
+    <br>
+    <label for="Login">Введите ваш Email: </label>
+    <br>
+    <input id="Login" placeholder="befree@world.com" type="text" style="margin-top: 3px">
+    <br>
+    <br>
+    
+    <div data-role="fieldcontain">
+        <label for="todo">
+            &nbsp;Введите ваш пароль:
+            <br>
+        </label>
+        <input name="" id="todo" placeholder="12345" value="" type="password" required>
+    </div>
+
+    <div data-role="fieldcontain">
+        <label for="todo2">
+            <br>
+            &nbsp; Введите повторно пароль:
+            <br>
+        </label>
+        <input name="" id="todo2" placeholder="..." value="" type="password" required>
+    </div>
+
+    <br>
+    <label for="Login"> Введите ваш номер телефона: </label>
+    <br>
+    <input id="Login" placeholder="+7-926-666-66-66" type="text" style="margin-top: 3px">
+    <br>
+    <br>
+    <label for="Login"> Выберите ваш пол: </label>
+    <div>
+        <input type="radio" name="Пол" value="Мужской" style="margin-top: 3px">
+        <label for="Мужской"> Мужской </label>
+    </div>
+
+    <div>
+        <input type="radio" name="Пол" value="Женский">
+        <label for="Женский"> Женский </label>
+    </div>
+
+    <title>Загрузка файла</title>
+    </head>
+
+    <form enctype="multipart/form-data" method="post">
+        <p> Загрузите вашt фото профиля: </p>
+        <input type="file" name="photo" multiple accept="image/*,image/jpeg">
+        <input type="submit" value="Отправить"> // Onclick  проверка, чтобы не перебивал формы
+        <br>
+        <legend>Choose your monster's features:</legend>
+        <div>
+            <input type="checkbox" id="scales" name="scales" checked>
+            <label for="scales">Scales</label>
+        </div>
+
+</fieldset>
+<p align="center"> <img src="../Photos/Logo.webp" style="margin-top: 175px; height: 45px; opacity: 0.4"> </p>
