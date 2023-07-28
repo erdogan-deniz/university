@@ -1,0 +1,14 @@
+	
+	* К-т 1/1;
+	* Тест № 1.1 - 27/45 (https://edu.stankin.ru/mod/quiz/view.php?id=318987);
+	* Тест № 1.3 - 42.05/54 (https://edu.stankin.ru/mod/quiz/view.php?id=318989);
+	* Тест № 1.4 - 51.27/54 (https://edu.stankin.ru/mod/quiz/view.php?id=321881);
+	* К-т PEST 2/2;
+	* Тест № 1.5 - 40/54 (https://edu.stankin.ru/mod/quiz/view.php?id=321882) почему-то малова-то;
+	* Контрольная работа № 2 - 54/54;
+	* К-т Цикл 1/1;
+	* Длительность производственного цикла ?/? (https://edu.stankin.ru/mod/assign/view.php?id=323072);
+	* Контрольная работа № 3 - 14.45/54 (https://edu.stankin.ru/mod/quiz/view.php?id=326443);
+	* Контрольная работа № 4 - 14/54 (https://edu.stankin.ru/mod/quiz/view.php?id=326442);
+	* Домашняя работа 1/1 (https://edu.stankin.ru/mod/assign/view.php?id=326486&action=view);
+	* Переписка КР нормирование времени 25/45 (https://edu.stankin.ru/mod/quiz/view.php?id=336066).
