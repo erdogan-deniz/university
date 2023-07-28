@@ -1,0 +1,11 @@
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\bin\Debug\ImgApp_2_WinForms.exe.config
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\bin\Debug\ImgApp_2_WinForms.exe
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\bin\Debug\ImgApp_2_WinForms.pdb
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\obj\Debug\ImgApp_2_WinForms.csproj.AssemblyReference.cache
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\obj\Debug\ImgApp_2_WinForms.csproj.SuggestedBindingRedirects.cache
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\obj\Debug\ImgApp_2_WinForms.Form1.resources
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\obj\Debug\ImgApp_2_WinForms.Properties.Resources.resources
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\obj\Debug\ImgApp_2_WinForms.csproj.GenerateResource.cache
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\obj\Debug\ImgApp_2_WinForms.csproj.CoreCompileInputs.cache
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\obj\Debug\ImgApp_2_WinForms.exe
+D:\Учёба\СЦОИ\Лаба2\ImgApp_2_WinForms\obj\Debug\ImgApp_2_WinForms.pdb
