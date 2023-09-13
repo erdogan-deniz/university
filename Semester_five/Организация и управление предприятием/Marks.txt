@@ -1,4 +1,3 @@
-	
 	* К-т 1/1;
 	* Тест № 1.1 - 27/45 (https://edu.stankin.ru/mod/quiz/view.php?id=318987);
 	* Тест № 1.3 - 42.05/54 (https://edu.stankin.ru/mod/quiz/view.php?id=318989);
