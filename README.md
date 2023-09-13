@@ -1,3 +1,3 @@
 # University
 
-The story of my university studying.
+The story of my university studying 👓
