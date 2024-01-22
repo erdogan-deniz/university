@@ -1,0 +1,15 @@
+C:\Users\Deniz\source\repos\3_List\bin\Debug\net6.0\3_List.exe
+C:\Users\Deniz\source\repos\3_List\bin\Debug\net6.0\3_List.deps.json
+C:\Users\Deniz\source\repos\3_List\bin\Debug\net6.0\3_List.runtimeconfig.json
+C:\Users\Deniz\source\repos\3_List\bin\Debug\net6.0\3_List.dll
+C:\Users\Deniz\source\repos\3_List\bin\Debug\net6.0\3_List.pdb
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\3_List.csproj.AssemblyReference.cache
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\3_List.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\3_List.AssemblyInfoInputs.cache
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\3_List.AssemblyInfo.cs
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\3_List.csproj.CoreCompileInputs.cache
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\3_List.dll
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\refint\3_List.dll
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\3_List.pdb
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\3_List.genruntimeconfig.cache
+C:\Users\Deniz\source\repos\3_List\obj\Debug\net6.0\ref\3_List.dll

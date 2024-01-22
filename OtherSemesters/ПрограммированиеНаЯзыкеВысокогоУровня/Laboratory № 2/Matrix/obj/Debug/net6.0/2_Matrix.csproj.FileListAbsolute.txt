@@ -1,0 +1,15 @@
+C:\Users\Deniz\source\repos\2_Matrix\bin\Debug\net6.0\2_Matrix.exe
+C:\Users\Deniz\source\repos\2_Matrix\bin\Debug\net6.0\2_Matrix.deps.json
+C:\Users\Deniz\source\repos\2_Matrix\bin\Debug\net6.0\2_Matrix.runtimeconfig.json
+C:\Users\Deniz\source\repos\2_Matrix\bin\Debug\net6.0\2_Matrix.dll
+C:\Users\Deniz\source\repos\2_Matrix\bin\Debug\net6.0\2_Matrix.pdb
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\2_Matrix.csproj.AssemblyReference.cache
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\2_Matrix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\2_Matrix.AssemblyInfoInputs.cache
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\2_Matrix.AssemblyInfo.cs
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\2_Matrix.csproj.CoreCompileInputs.cache
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\2_Matrix.dll
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\refint\2_Matrix.dll
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\2_Matrix.pdb
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\2_Matrix.genruntimeconfig.cache
+C:\Users\Deniz\source\repos\2_Matrix\obj\Debug\net6.0\ref\2_Matrix.dll
