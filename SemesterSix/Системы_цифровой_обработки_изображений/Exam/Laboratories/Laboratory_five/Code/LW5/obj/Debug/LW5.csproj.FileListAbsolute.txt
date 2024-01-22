@@ -1,0 +1,33 @@
+C:\Users\nastya\source\repos\LW5\LW5\bin\Debug\LW5.exe.config
+C:\Users\nastya\source\repos\LW5\LW5\bin\Debug\LW5.exe
+C:\Users\nastya\source\repos\LW5\LW5\bin\Debug\LW5.pdb
+C:\Users\nastya\source\repos\LW5\LW5\obj\Debug\LW5.csproj.AssemblyReference.cache
+C:\Users\nastya\source\repos\LW5\LW5\obj\Debug\LW5.csproj.SuggestedBindingRedirects.cache
+C:\Users\nastya\source\repos\LW5\LW5\obj\Debug\LW5.Form1.resources
+C:\Users\nastya\source\repos\LW5\LW5\obj\Debug\LW5.Properties.Resources.resources
+C:\Users\nastya\source\repos\LW5\LW5\obj\Debug\LW5.csproj.GenerateResource.cache
+C:\Users\nastya\source\repos\LW5\LW5\obj\Debug\LW5.csproj.CoreCompileInputs.cache
+C:\Users\nastya\source\repos\LW5\LW5\obj\Debug\LW5.exe
+C:\Users\nastya\source\repos\LW5\LW5\obj\Debug\LW5.pdb
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\bin\Debug\LW5.exe.config
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\bin\Debug\LW5.exe
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\bin\Debug\LW5.pdb
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\obj\Debug\LW5.csproj.AssemblyReference.cache
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\obj\Debug\LW5.csproj.SuggestedBindingRedirects.cache
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\obj\Debug\LW5.Form1.resources
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\obj\Debug\LW5.Properties.Resources.resources
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\obj\Debug\LW5.csproj.GenerateResource.cache
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\obj\Debug\LW5.csproj.CoreCompileInputs.cache
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\obj\Debug\LW5.exe
+C:\Users\nastya\Desktop\Лабы отдельно\СЦОИ\5лаба\LW5\LW5\obj\Debug\LW5.pdb
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\bin\Debug\LW5.exe.config
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\bin\Debug\LW5.exe
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\bin\Debug\LW5.pdb
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\obj\Debug\LW5.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\obj\Debug\LW5.csproj.SuggestedBindingRedirects.cache
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\obj\Debug\LW5.Form1.resources
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\obj\Debug\LW5.Properties.Resources.resources
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\obj\Debug\LW5.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\obj\Debug\LW5.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\obj\Debug\LW5.exe
+C:\Users\admin\Downloads\Telegram Desktop\LW5\LW5\obj\Debug\LW5.pdb

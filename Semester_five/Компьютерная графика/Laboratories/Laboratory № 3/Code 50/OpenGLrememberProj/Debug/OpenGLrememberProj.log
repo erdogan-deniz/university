@@ -1,7 +1,0 @@
-﻿  Render.cpp
-C:\Users\matve\source\repos\poverhnostBezie\OpenGLrememberProj\Render.cpp(127,31): warning C4838: Преобразование из "double" в "GLfloat" требует сужающего преобразования.
-C:\Users\matve\source\repos\poverhnostBezie\OpenGLrememberProj\Render.cpp(127,40): warning C4838: Преобразование из "double" в "GLfloat" требует сужающего преобразования.
-C:\Users\matve\source\repos\poverhnostBezie\OpenGLrememberProj\Render.cpp(127,49): warning C4838: Преобразование из "double" в "GLfloat" требует сужающего преобразования.
-C:\Users\matve\source\repos\poverhnostBezie\OpenGLrememberProj\Render.cpp(391,1): warning C4005: PI: изменение макроопределения
-C:\Users\matve\source\repos\poverhnostBezie\OpenGLrememberProj\angle.h(5): message : см. предыдущее определение "PI"
-  OpenGLrememberProj.vcxproj -> C:\Users\matve\source\repos\poverhnostBezie\Debug\OpenGLrememberProj.exe

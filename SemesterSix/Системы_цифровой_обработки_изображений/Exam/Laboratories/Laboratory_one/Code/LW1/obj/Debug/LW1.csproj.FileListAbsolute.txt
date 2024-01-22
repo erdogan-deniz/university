@@ -1,0 +1,34 @@
+C:\Users\nastya\source\repos\LW1\LW1\bin\Debug\LW1.exe.config
+C:\Users\nastya\source\repos\LW1\LW1\bin\Debug\LW1.exe
+C:\Users\nastya\source\repos\LW1\LW1\bin\Debug\LW1.pdb
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.csproj.AssemblyReference.cache
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.csproj.SuggestedBindingRedirects.cache
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.Form1.resources
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.Properties.Resources.resources
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.csproj.GenerateResource.cache
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.csproj.CoreCompileInputs.cache
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.exe
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.pdb
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\UserControl1.g.cs
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1_MarkupCompile.cache
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1_MarkupCompile.lref
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\UserControl1.baml
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1.g.resources
+C:\Users\nastya\source\repos\LW1\LW1\obj\Debug\LW1_Content.g.cs
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\bin\Debug\LW1.exe.config
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\bin\Debug\LW1.exe
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\bin\Debug\LW1.pdb
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.csproj.AssemblyReference.cache
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\UserControl1.g.cs
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1_Content.g.cs
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1_MarkupCompile.cache
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1_MarkupCompile.lref
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\UserControl1.baml
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.g.resources
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.Form1.resources
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.Properties.Resources.resources
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.csproj.GenerateResource.cache
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.csproj.CoreCompileInputs.cache
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.exe
+C:\Users\Deniz\OneDrive\Рабочий стол\LW1\LW1\obj\Debug\LW1.pdb
