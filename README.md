@@ -1,4 +1,4 @@
-# University 🌪
+# 🏫 University 🏫
 
 Here is information about my studies at the university.
 
