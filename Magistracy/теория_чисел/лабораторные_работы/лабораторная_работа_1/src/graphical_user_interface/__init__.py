@@ -7,13 +7,8 @@ Main modules:
 - data.py: Contains the data necessary for the functions.
 - functions.py: Сontains functions for visualizations of the application.
 
-Usage example:
-
-    from calculations import *
-    from graphical_user_interface import *
-
-    if __name__ == "__main__":
-        draw_main_window(600, 800)
+Usage:
+    from graphical_user_interface import draw_main_window
 """
 
 from .functions import *
