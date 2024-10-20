@@ -34,13 +34,13 @@
 5) Повторение: повторяйте шаги 2-4, пока *b* не станет равным *0*
 
 • описать структуру представления данных в программе
-[Структура проекта](docs/_build/html/file_structure.html)
+[Структура проекта]([docs/_build/html/file_structure.html](http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%87%D0%B8%D1%81%D0%B5%D0%BB/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_1/docs/_build/html/code_docs.html))
 
 • основные функции программы
-[Функции программы](docs/_build/html/code_docs.html)
+[Функции программы]([docs/_build/html/code_docs.html](http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/docs/_build/html/code_docs.html))
 
 • назначение функций, входные и выходные параметры функци
-[Функции программы](docs/_build/html/code_docs.html)
+[Функции программы]([docs/_build/html/code_docs.html](http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/docs/_build/html/code_docs.html))
 
 ### Контрольные вопросы
 
