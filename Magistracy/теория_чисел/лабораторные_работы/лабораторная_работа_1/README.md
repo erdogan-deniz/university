@@ -18,7 +18,7 @@
 ![FILE DATA](https://github.com/Denzi33/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/resources/gifs/file_data.gif)
 
 • ввода начальной информации из файла, который создается в оболочке программы
-<a href="http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%87%D0%B8%D1%81%D0%B5%D0%BB/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_1/docs/_build/html/code_docs.html" target="_blank" rel="noopener noreferrer">Перейти на Example</a>
+![CREATE FILE](https://github.com/Denzi33/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/resources/gifs/create_file.gif)
 
 • ввод начальной информации с клавиатуры
 ![INPUT DATA](https://github.com/Denzi33/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/resources/gifs/input_data.gif)
@@ -34,13 +34,13 @@
 5) Повторение: повторяйте шаги 2-4, пока *b* не станет равным *0*
 
 • описать структуру представления данных в программе
-[Структура проекта]([docs/_build/html/file_structure.html](http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%87%D0%B8%D1%81%D0%B5%D0%BB/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_1/docs/_build/html/code_docs.html))
+<a href="http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%87%D0%B8%D1%81%D0%B5%D0%BB/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_1/docs/_build/html/code_docs.html" target="_blank" rel="noopener noreferrer">Перейти</a>
 
 • основные функции программы
-[Функции программы]([docs/_build/html/code_docs.html](http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/docs/_build/html/code_docs.html))
+<a href="http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%87%D0%B8%D1%81%D0%B5%D0%BB/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_1/docs/_build/html/code_docs.html" target="_blank" rel="noopener noreferrer">Перейти</a>
 
 • назначение функций, входные и выходные параметры функци
-[Функции программы]([docs/_build/html/code_docs.html](http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/docs/_build/html/code_docs.html))
+<a href="http://htmlpreview.github.io/?https://github.com/Denzi33/University/blob/main/Magistracy/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D1%87%D0%B8%D1%81%D0%B5%D0%BB/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B/%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_1/docs/_build/html/code_docs.html" target="_blank" rel="noopener noreferrer">Перейти</a>
 
 ### Контрольные вопросы
 
