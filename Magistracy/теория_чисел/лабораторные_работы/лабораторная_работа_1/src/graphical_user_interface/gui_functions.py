@@ -5,28 +5,29 @@ numbers, read them from a file, and save the numbers for calculations to a file.
 The graphical interface is built using the Tkinter library and supports
 background images.
 
-Classes:
-- Window: A custom Tkinter window that provides methods for setting the
-  background, centering the window, creating files, and calculating GCD.
+CLASSES:
+    Window: A custom Tkinter window that provides methods for setting the
+    background, centering the window, creating files, and calculating GCD.
 
-Functions:
-- read_file_numbers(window: Window, a_field: Entry, b_field: Entry) -> None:
-  Reads two integers from a specified text file and updates the input fields.
-- draw_window(window_height: int, window_width: int) -> None:
-  Initializes and displays the main application window.
+FUNCTIONS:
+    read_file_numbers(window: Window, a_field: Entry, b_field: Entry) -> None:
+    Reads two integers from a specified text file and updates the input fields.
 
-Example:
+    draw_window(window_height: int, window_width: int) -> None:
+    Initializes and displays the main application window.
+
+EXAMPLE:
     from graphical_user_interface import draw_window
 
     if __name__ == "__main__":
         draw_window(600, 800)
 """
 
-from .data import BACKGROUND_PATH
+from .gui_data import BACKGROUND_PATH
 
 from PIL import Image, ImageFile, ImageTk
 
-from calculations.functions import get_gcd
+from calculations.calc_functions import get_gcd
 
 from tkinter import Button, END, Entry, Label, Tk, messagebox
 from tkinter.filedialog import askopenfilename, asksaveasfilename
@@ -41,11 +42,15 @@ class Window(Tk):
     background image, centering the window on the screen, creating files to
     save input values, and displaying gcd results.
 
-    Attributes:
+    ATTRIBUTES:
         a_number (int): The first integer input by the user.
+
         b_number (int): The second integer input by the user.
+
         width (int): The width of the window.
+
         height (int): The height of the window.
+
         background_image (object): The background image displayed in the window.
     """
 
@@ -53,7 +58,7 @@ class Window(Tk):
         """
         Sets initial values for class fields.
 
-        Args:
+        ARGS:
             background_path (str): The file path to the background image.
         """
 
@@ -69,7 +74,7 @@ class Window(Tk):
         """
         Sets the background image of the window.
 
-        Args:
+        ARGS:
             background_path (str): The file path to the background image.
         """
 
@@ -99,8 +104,9 @@ class Window(Tk):
         Prompts the user to specify a file path and saves the values of
         integers a_number and a_number into that file.
 
-        Args:
+        ARGS:
             a_field (Entry): The entry widget for integer a_number.
+
             b_field (Entry): The entry widget for integer b_number.
         """
 
@@ -137,8 +143,9 @@ class Window(Tk):
         Retrieves integer values from input fields and calculates their GCD,
         displaying it in a message box.
 
-        Args:
+        ARGS:
             a_field (Entry): The entry widget for integer a_number.
+
             b_field (Entry): The entry widget for integer b_number.
         """
 
@@ -157,7 +164,7 @@ class Window(Tk):
 
             messagebox.showinfo(
                 "GCD VALUE.",
-                f"The gcd is {get_gcd(self.a_number, self.b_number)}.",
+                f"The GCD is {get_gcd(self.a_number, self.b_number)}.",
             )
         else:
             messagebox.showerror(
@@ -173,9 +180,11 @@ def read_file_numbers(window: Window, a_field: Entry, b_field: Entry) -> None:
     Prompts the user to select a text file and extracts two integers from it,
     updating the corresponding entry widgets in the GUI.
 
-    Args:
+    ARGS:
         window (Window): The main application window instance.
+
         a_field (Entry): The entry widget for integer a_number.
+
         b_field (Entry): The entry widget for integer b_number.
     """
 
@@ -218,8 +227,9 @@ def draw_window(window_heigth: int, window_width: int) -> None:
     Sets up labels and buttons for user interaction and starts the main loop
     of the Tkinter application.
 
-    Args:
+    ARGS:
         window_height (int): The height of the main application window.
+
         window_width (int): The width of the main application window.
     """
 

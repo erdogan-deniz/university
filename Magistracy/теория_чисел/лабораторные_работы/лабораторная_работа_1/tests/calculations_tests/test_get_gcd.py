@@ -1,40 +1,23 @@
 """
-Test module for the get_gcd function from the calculations module.
+Test module for the get_gcd_multiplier function from the calculations module.
 
-This module contains unit tests for the get_gcd function, which calculates
-the greatest common divisor of two integers. The tests are designed
-to validate the correctness of the function across various input scenarios.
+This module contains unit tests for the get_gcd_multiplier function, which
+calculates the multiplier. The tests are designed to validate the correctness
+of the function across various input scenarios.
 
-Imported modules:
-- os: A module that provides a way of using operating system-dependent
-  functionality like reading or writing to the file system.
-- pytest: A framework for writing and running tests.
-- sys: A module that provides access to some variables used or maintained
-  by the interpreter and to functions that interact with the interpreter.
+FUNCTIONS:
+    test_get_gcd_multiplier(a_number: int, b_number: int, result: int) ->
+    None: Run tests for get_gcd_multiplier function.
 
-Constants:
-- CALCULATIONS_PACKAGE_PATH (str): A relative path to the calculations
-  package directory, used to import modules for testing.
+USAGE:
+    pytest test_get_gcd_multiplier.py
 
-Functions:
-- test_get_gcd(a_number: int, b_number: int, result: int) -> None: Run tests for
-  get_gcd function.
-
-Usage:
-  pytest test_get_gcd.py
-
-Parameters:
-- a_number (int): The first integer input for GCD calculation.
-- b_number (int): The second integer input for GCD calculation.
-- result (int): The expected output from the get_gcd function
-  for the given inputs a_number and b_number.
-
-Test Cases:
+TEST CASES:
 - (1, 1) should return 1
-- (999, 3) should return 3
-- (1337, 228) should return 1
-- (1071, 462) should return 21
-- (123654789, 7) should return 1
+- (999, 3) should return 332
+- (1071, 462) should return 2
+- (1337, 228) should return 5
+- (123654789, 7) should return 17664969
 """
 
 import os
@@ -45,39 +28,41 @@ from sys import path
 
 path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from data import CALCULATIONS_PACKAGE_PATH
+from test_data import CALCULATIONS_PACKAGE_PATH
 
 path.append(CALCULATIONS_PACKAGE_PATH)
 
-from calculations.functions import get_gcd
+from calculations.calc_functions import get_gcd_multiplier
 
 
 @pytest.mark.parametrize(
     "a_number, b_number, result",
     [
         (1, 1, 1),
-        (999, 3, 3),
-        (1337, 228, 1),
-        (1071, 462, 21),
-        (123654789, 7, 1),
+        (999, 3, 332),
+        (1071, 462, 2),
+        (1337, 228, 5),
+        (123654789, 7, 17664969),
     ],
 )
-def test_get_gcd(a_number: int, b_number: int, result: int) -> None:
+def test_get_gcd_multiplier(a_number: int, b_number: int, result: int) -> None:
     """
-    Test the get_gcd function for correctness.
+    Test the get_gcd_multiplier function for correctness.
 
-    This function asserts that the output of get_gcd
+    This function asserts that the output of get_gcd_multiplier
     for  given inputs a_number and b_number matches the expected result.
 
-    Parameters:
-    - a_number (int): The first integer input for the GCD calculation.
-    - b_number (int): The second integer input for the GCD calculation.
-    - result (int): The expected output from the get_gcd
-      function for the given inputs.
+    PARAMETERS:
+        a_number (int): The first integer input for the GCD calculation.
 
-    Raises:
-    AssertionError: If the actual output from get_gcd
-                    does not equal the expected result.
+        b_number (int): The second integer input for the GCD calculation.
+
+        result (int): The expected output from the get_gcd_multiplier
+                      function for the given inputs.
+
+    RAISES:
+        AssertionError: If the actual output from get_gcd_multiplier
+                        does not equal the expected result.
     """
 
-    assert get_gcd(a_number, b_number) == result
+    assert get_gcd_multiplier(a_number, b_number) == result

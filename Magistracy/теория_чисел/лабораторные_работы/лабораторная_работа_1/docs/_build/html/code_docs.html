@@ -1,0 +1,593 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Project File Structure" href="file_structure.html" /><link rel="prev" title="Laboratory Work № 1" href="index.html" />
+
+    <!-- Generated with Sphinx 8.1.3 and Furo 2024.08.06 -->
+        <title>Technical Documentation - Laboratory Work № 1 v1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Laboratory Work № 1 v1.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/logo.jpg" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Laboratory Work № 1 v1.0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#"><strong>Technical Documentation</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="file_structure.html"><strong>Project File Structure</strong></a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/code_docs.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="technical-documentation">
+<h1><strong>Technical Documentation</strong><a class="headerlink" href="#technical-documentation" title="Link to this heading">¶</a></h1>
+<section id="the-calculations-package">
+<h2><strong>The Calculations Package</strong><a class="headerlink" href="#the-calculations-package" title="Link to this heading">¶</a></h2>
+<section id="module-calculations">
+<span id="calculations"></span><h3><em>calculations</em>:<a class="headerlink" href="#module-calculations" title="Link to this heading">¶</a></h3>
+<p>Package calculations.</p>
+<p>The package provides functionality for computing the Euclidean algorithm.</p>
+<dl class="simple">
+<dt>MODULES:</dt><dd><p>calc_functions.py: Сontains functions for calculations.</p>
+</dd>
+<dt>USAGE:</dt><dd><p>import calculations</p>
+</dd>
+</dl>
+</section>
+<section id="module-calc_functions">
+<span id="calc-functions-py"></span><h3><em>calc_functions.py</em>:<a class="headerlink" href="#module-calc_functions" title="Link to this heading">¶</a></h3>
+<p>This module provides functions for calculating the greatest common divisor
+of two integers using a modified version of the Euclidean algorithm.</p>
+<dl>
+<dt>FUNCTIONS:</dt><dd><p>get_gcd_multiplier(a_number: int, b_number: int) -&gt; int: Calculates the
+multiplier needed in the Euclidean algorithm.</p>
+<p>get_gcd(a_number: int, b_number: int) -&gt; int: Computes the GCD of two
+integers.</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>from calculations import get_gcd</p>
+<p>print(get_gcd(30, 18))</p>
+<p># Output: 6</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="calc_functions.get_gcd">
+<span class="sig-prename descclassname"><span class="pre">calc_functions.</span></span><span class="sig-name descname"><span class="pre">get_gcd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/calc_functions.html#get_gcd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#calc_functions.get_gcd" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate the greatest common divisor of two integers.</p>
+<p>This function uses a modified version of the Euclidean algorithm
+to compute the GCD of two integers by repeatedly reducing the
+larger integer until it equals zero.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_number</strong> (<em>int</em>) – The first integer.</p></li>
+<li><p><strong>b_number</strong> (<em>int</em>) – The second integer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The greatest common divisor of the two integers.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>print(get_gcd(30, 18))</p>
+<p># Output: 6</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="calc_functions.get_gcd_multiplier">
+<span class="sig-prename descclassname"><span class="pre">calc_functions.</span></span><span class="sig-name descname"><span class="pre">get_gcd_multiplier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/calc_functions.html#get_gcd_multiplier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#calc_functions.get_gcd_multiplier" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the multiplier in the Euclidean algorithm.</p>
+<p>The function determines the multiplier needed to express the
+difference between the maximum and minimum of the two integers
+in terms of the minimum integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_number</strong> (<em>int</em>) – The first integer.</p></li>
+<li><p><strong>b_number</strong> (<em>int</em>) – The second integer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The multiplier for the smaller number of a pair of numbers of the
+Euclid algorithm, when multiplied by which the difference between the
+larger number of a pair of numbers of the Euclid algorithm and the
+product will be less than the smaller number of a pair of numbers of
+the Euclid algorithm.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>print(get_gcd_multiplier(30, 18))</p>
+<p># Output: 1</p>
+</dd></dl>
+
+</section>
+</section>
+<section id="the-gui-package">
+<h2><strong>The GUI Package</strong><a class="headerlink" href="#the-gui-package" title="Link to this heading">¶</a></h2>
+<section id="module-graphical_user_interface">
+<span id="graphical-user-interface"></span><h3><em>graphical_user_interface</em>:<a class="headerlink" href="#module-graphical_user_interface" title="Link to this heading">¶</a></h3>
+<p>Package graphical_user_interface.</p>
+<p>The package provides a graphical function for working with the Euclid algorithm.</p>
+<dl>
+<dt>MODULES:</dt><dd><p>gui_data.py: Contains the data necessary for the functions.</p>
+<p>gui_functions.py: Сontains functions for visualizations of the application.</p>
+</dd>
+<dt>USAGE:</dt><dd><p>from graphical_user_interface import draw_main_window</p>
+</dd>
+</dl>
+</section>
+<section id="module-gui_data">
+<span id="gui-data-py"></span><h3><em>gui_data.py</em>:<a class="headerlink" href="#module-gui_data" title="Link to this heading">¶</a></h3>
+<p>This module contains configuration settings and constants for the application.</p>
+<dl class="simple">
+<dt>CONSTANTS:</dt><dd><p>BACKGROUND_PATH (str): The file path to the background image used in the
+application.</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>from graphical_user_interface import BACKGROUND_PATH</p>
+<p>background_image = load_image(BACKGROUND_PATH)</p>
+</section>
+<section id="gui-functions-py">
+<h3><em>gui_functions.py</em>:<a class="headerlink" href="#gui-functions-py" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+<section id="the-start-point">
+<h2><strong>The Start Point</strong><a class="headerlink" href="#the-start-point" title="Link to this heading">¶</a></h2>
+<section id="module-main">
+<span id="main-py"></span><h3><em>main.py</em>:<a class="headerlink" href="#module-main" title="Link to this heading">¶</a></h3>
+<p>Main entry point for the GCD calculation application.</p>
+<p>This script initializes and launches the graphical user interface
+for calculating the greatest common divisor of two integers.
+It imports necessary functions from the <cite>calculations</cite> and
+<cite>graphical_user_interface</cite> modules.</p>
+<dl class="simple">
+<dt>DESCRIPTION:</dt><dd><p>Run this script to display the main application window where
+users can input two integers and calculate their GCD. The window
+dimensions can be specified as arguments to the <cite>draw_window</cite>
+function.</p>
+</dd>
+<dt>USAGE:</dt><dd><p>poetry run python src/main.py</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="the-test-functions">
+<h2><strong>The Test Functions</strong><a class="headerlink" href="#the-test-functions" title="Link to this heading">¶</a></h2>
+<section id="module-test_get_gcd">
+<span id="test-get-gcd-py"></span><h3><em>test_get_gcd.py</em>:<a class="headerlink" href="#module-test_get_gcd" title="Link to this heading">¶</a></h3>
+<p>Test module for the get_gcd_multiplier function from the calculations module.</p>
+<p>This module contains unit tests for the get_gcd_multiplier function, which
+calculates the multiplier. The tests are designed to validate the correctness
+of the function across various input scenarios.</p>
+<dl class="simple">
+<dt>FUNCTIONS:</dt><dd><p>test_get_gcd_multiplier(a_number: int, b_number: int, result: int) -&gt;
+None: Run tests for get_gcd_multiplier function.</p>
+</dd>
+<dt>USAGE:</dt><dd><p>pytest test_get_gcd_multiplier.py</p>
+</dd>
+</dl>
+<p>TEST CASES:
+- (1, 1) should return 1
+- (999, 3) should return 332
+- (1071, 462) should return 2
+- (1337, 228) should return 5
+- (123654789, 7) should return 17664969</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="test_get_gcd.test_get_gcd_multiplier">
+<span class="sig-prename descclassname"><span class="pre">test_get_gcd.</span></span><span class="sig-name descname"><span class="pre">test_get_gcd_multiplier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/test_get_gcd.html#test_get_gcd_multiplier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_get_gcd.test_get_gcd_multiplier" title="Link to this definition">¶</a></dt>
+<dd><p>Test the get_gcd_multiplier function for correctness.</p>
+<p>This function asserts that the output of get_gcd_multiplier
+for  given inputs a_number and b_number matches the expected result.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_number</strong> (<em>int</em>) – The first integer input for the GCD calculation.</p></li>
+<li><p><strong>b_number</strong> (<em>int</em>) – The second integer input for the GCD calculation.</p></li>
+<li><p><strong>result</strong> (<em>int</em>) – The expected output from the get_gcd_multiplier
+function for the given inputs.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>AssertionError</strong> – If the actual output from get_gcd_multiplier
+    does not equal the expected result.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-test_get_gcd_multiplier">
+<span id="test-get-gcd-multiplier-py"></span><h3><em>test_get_gcd_multiplier.py</em>:<a class="headerlink" href="#module-test_get_gcd_multiplier" title="Link to this heading">¶</a></h3>
+<p>Test module for the get_gcd function from the calculations module.</p>
+<p>This module contains unit tests for the get_gcd function, which calculates
+the greatest common divisor of two integers. The tests are designed
+to validate the correctness of the function across various input scenarios.</p>
+<dl class="simple">
+<dt>FUNCTIONS:</dt><dd><p>test_get_gcd(a_number: int, b_number: int, result: int) -&gt; None: Run
+tests for get_gcd function.</p>
+</dd>
+<dt>USAGE:</dt><dd><p>pytest test_get_gcd.py</p>
+</dd>
+</dl>
+<p>TEST CASES:
+- (1, 1) should return 1
+- (999, 3) should return 3
+- (1337, 228) should return 1
+- (1071, 462) should return 21
+- (123654789, 7) should return 1</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="test_get_gcd_multiplier.test_get_gcd">
+<span class="sig-prename descclassname"><span class="pre">test_get_gcd_multiplier.</span></span><span class="sig-name descname"><span class="pre">test_get_gcd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/test_get_gcd_multiplier.html#test_get_gcd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_get_gcd_multiplier.test_get_gcd" title="Link to this definition">¶</a></dt>
+<dd><p>Test the get_gcd function for correctness.</p>
+<p>This function asserts that the output of get_gcd for  given
+inputs a_number and b_number matches the expected result.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a_number</strong> (<em>int</em>) – The first integer input for the GCD calculation.</p></li>
+<li><p><strong>b_number</strong> (<em>int</em>) – The second integer input for the GCD calculation.</p></li>
+<li><p><strong>result</strong> (<em>int</em>) – The expected output from the get_gcd
+function for the given inputs.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>AssertionError</strong> – If the actual output from get_gcd
+    does not equal the expected result.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+<section id="the-test-data">
+<h2><strong>The Test Data</strong><a class="headerlink" href="#the-test-data" title="Link to this heading">¶</a></h2>
+<section id="module-test_data">
+<span id="test-data-py"></span><h3><em>test_data.py</em>:<a class="headerlink" href="#module-test_data" title="Link to this heading">¶</a></h3>
+<p>This module contains configuration settings and constants for the tests.</p>
+<dl class="simple">
+<dt>CONSTANTS:</dt><dd><p>CALCULATIONS_PACKAGE_PATH (str): The calculations package path.</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>from test_data import CALCULATIONS_PACKAGE_PATH</p>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="file_structure.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title"><strong>Project File Structure</strong></div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2024, Deniz Erdogan
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#"><strong>Technical Documentation</strong></a><ul>
+<li><a class="reference internal" href="#the-calculations-package"><strong>The Calculations Package</strong></a><ul>
+<li><a class="reference internal" href="#module-calculations"><em>calculations</em>:</a></li>
+<li><a class="reference internal" href="#module-calc_functions"><em>calc_functions.py</em>:</a><ul>
+<li><a class="reference internal" href="#calc_functions.get_gcd"><code class="docutils literal notranslate"><span class="pre">get_gcd()</span></code></a></li>
+<li><a class="reference internal" href="#calc_functions.get_gcd_multiplier"><code class="docutils literal notranslate"><span class="pre">get_gcd_multiplier()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-gui-package"><strong>The GUI Package</strong></a><ul>
+<li><a class="reference internal" href="#module-graphical_user_interface"><em>graphical_user_interface</em>:</a></li>
+<li><a class="reference internal" href="#module-gui_data"><em>gui_data.py</em>:</a></li>
+<li><a class="reference internal" href="#gui-functions-py"><em>gui_functions.py</em>:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-start-point"><strong>The Start Point</strong></a><ul>
+<li><a class="reference internal" href="#module-main"><em>main.py</em>:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-test-functions"><strong>The Test Functions</strong></a><ul>
+<li><a class="reference internal" href="#module-test_get_gcd"><em>test_get_gcd.py</em>:</a><ul>
+<li><a class="reference internal" href="#test_get_gcd.test_get_gcd_multiplier"><code class="docutils literal notranslate"><span class="pre">test_get_gcd_multiplier()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-test_get_gcd_multiplier"><em>test_get_gcd_multiplier.py</em>:</a><ul>
+<li><a class="reference internal" href="#test_get_gcd_multiplier.test_get_gcd"><code class="docutils literal notranslate"><span class="pre">test_get_gcd()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-test-data"><strong>The Test Data</strong></a><ul>
+<li><a class="reference internal" href="#module-test_data"><em>test_data.py</em>:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=e160b93e"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=5fa4622c"></script>
+    </body>
+</html>

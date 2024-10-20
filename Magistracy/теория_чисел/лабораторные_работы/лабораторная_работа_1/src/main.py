@@ -6,13 +6,13 @@ for calculating the greatest common divisor of two integers.
 It imports necessary functions from the `calculations` and
 `graphical_user_interface` modules.
 
-Usage:
+DESCRIPTION:
     Run this script to display the main application window where
     users can input two integers and calculate their GCD. The window
     dimensions can be specified as arguments to the `draw_window`
     function.
 
-Usage:
+USAGE:
     poetry run python src/main.py
 """
 

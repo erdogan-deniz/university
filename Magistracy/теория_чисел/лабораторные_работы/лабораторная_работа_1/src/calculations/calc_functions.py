@@ -2,13 +2,14 @@
 This module provides functions for calculating the greatest common divisor
 of two integers using a modified version of the Euclidean algorithm.
 
-Functions:
-- get_gcd_multiplier(a_number: int, b_number: int) -> int: Calculates the
-  multiplier needed in the Euclidean algorithm.
-- get_gcd(a_number: int, b_number: int) -> int: Computes the GCD of two
-  integers.
+FUNCTIONS:
+    get_gcd_multiplier(a_number: int, b_number: int) -> int: Calculates the
+    multiplier needed in the Euclidean algorithm.
 
-Example:
+    get_gcd(a_number: int, b_number: int) -> int: Computes the GCD of two
+    integers.
+
+EXAMPLE:
     from calculations import get_gcd
 
     print(get_gcd(30, 18))
@@ -25,18 +26,19 @@ def get_gcd_multiplier(a_number: int, b_number: int) -> int:
     difference between the maximum and minimum of the two integers
     in terms of the minimum integer.
 
-    Args:
+    ARGS:
         a_number (int): The first integer.
+
         b_number (int): The second integer.
 
-    Returns:
+    RETURNS:
         int: The multiplier for the smaller number of a pair of numbers of the
         Euclid algorithm, when multiplied by which the difference between the
         larger number of a pair of numbers of the Euclid algorithm and the
         product will be less than the smaller number of a pair of numbers of
         the Euclid algorithm.
 
-    Example:
+    EXAMPLE:
         print(get_gcd_multiplier(30, 18))
 
         # Output: 1
@@ -63,14 +65,15 @@ def get_gcd(a_number: int, b_number: int) -> int:
     to compute the GCD of two integers by repeatedly reducing the
     larger integer until it equals zero.
 
-    Args:
+    ARGS:
         a_number (int): The first integer.
+
         b_number (int): The second integer.
 
-    Returns:
+    RETURNS:
         int: The greatest common divisor of the two integers.
 
-    Example:
+    EXAMPLE:
         print(get_gcd(30, 18))
 
         # Output: 6
