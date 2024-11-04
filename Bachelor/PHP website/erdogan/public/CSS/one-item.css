@@ -1,0 +1,195 @@
+
+
+.desc{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    padding: 15px;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.title{
+    font-size: 24px;
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.price{
+    font-size: 24px;
+    justify-self: end;
+}
+
+.buybtn button{
+    border: none;
+    border-radius: 5px;
+    width: 153px;
+    height: 30px;
+    background: aqua;
+}
+
+/* нижняя менюха */
+
+.down_container{
+    margin-bottom: 100px;
+    font-size: 24px;
+    padding: 15px;
+}
+
+
+.down_container_content{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu{
+    display: inline-flex;
+    gap: 10px;
+    transition: 0.5s ease all;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.descriptionbutton{
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.specsButton{
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.rewiewbutton{
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.descriptionbutton.unactive{
+    border: 1px solid #000;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.specsButton.active{
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.rewiewbutton.active{
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.descriptionText{
+    display: block;
+    font-size: 16px;
+    color: #484343;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.descriptionText.hide{
+    display: none;
+}
+
+.specsText{
+    display: none;
+}
+
+.specsText.show{
+    display: block;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '✓ ';
+  }
+
+.rewiewText {
+    display: none;
+}
+
+.rewiewText.show{
+    display: block;
+}
+
+.rewiewText img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(3,1fr);
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .avatar{
+    align-self: center;
+    grid-row: span 3;
+    justify-self: center;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback textarea{
+    width: 340px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+
+.send_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;    
+}
+
+.feedback button{
+    display: block;
+    border: none;
+    width: 90%;
+    display: block;
+    background: #4ee9f9;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.image{
+    padding: 15px;
+}
+
+.image img{
+    width: 55%;
+    border: 3px double #000;
+    border-radius: 10px;
+}

@@ -1,0 +1,116 @@
+#h_login
+{
+    display: block;
+    width: 90%;
+    height: 20px;
+}
+
+#h_password
+{
+    display: block;
+    width: 90%;
+    height: 20px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header_table {
+    width: 60%;
+    margin-left: 20%;
+    background-color: rgb(221, 218, 211);
+}
+
+#under_header_table {
+    width: 60%;
+    height: 35px;
+    margin-left: 20%;
+    background-color: rgb(221, 166, 221);
+    text-align: center;
+}
+
+#left_table {
+    width: 60%;
+    height: 800px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+#header_table img {
+    width: 80%;
+    height: 85%;
+    margin-left: 15%;
+}
+
+#second_column_header {
+    width: 60%;
+    font-size: 50px;
+    color: rgb(91, 229, 253);
+    -webkit-text-stroke-width: 0.5px;
+    font-family: Trebuchet;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+#third_column_header {
+    text-align: left;
+    width: 20%;
+    color: rgb(107, 41, 107);
+}
+
+
+#left_column {
+    width: 20%;
+    line-height: 21px;
+    vertical-align: top;
+    background-color: rgb(221, 218, 211);
+}
+
+#photo {
+    width: 140px;
+    height: 210px;
+    margin-top: 10px;
+}
+
+#right_column {
+    text-align: center;
+    width: 20%;
+    line-height: 20px;
+    vertical-align: top;
+    background-color: rgb(221, 218, 211);
+}
+
+#right_column {
+    width: 20%;
+    vertical-align: top;
+    background-color: rgb(221, 218, 211);
+}
+
+#button2 {
+    width: 46px;
+    height: 18px;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+#low_table {
+    background-color: rgb(0, 107, 179);
+    height: 40px;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
