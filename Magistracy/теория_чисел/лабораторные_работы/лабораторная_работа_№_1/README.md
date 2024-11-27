@@ -15,7 +15,7 @@
 В программной реализации алгоритма *Евклида* должен быть разработан интерфейс, удобный для эксплуатации:
 
 • ввода начальной информации из сформированного заранее файла
-![FILE DATA](https://github.com/erdogan-deniz/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/resources/gifs/file_data.gif)
+![FILE DATA](https://github.com/erdogan-deniz/university/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_№_1/resources/gifs/file_data.gif)
 
 • ввода начальной информации из файла, который создается в оболочке программы
 ![CREATE FILE](https://github.com/erdogan-deniz/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/resources/gifs/create_file.gif)
