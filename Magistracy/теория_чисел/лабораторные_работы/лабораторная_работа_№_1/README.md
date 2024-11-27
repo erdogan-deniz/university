@@ -21,7 +21,7 @@
 ![CREATE FILE](https://github.com/erdogan-deniz/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_№_1/resources/gifs/create_file.gif)
 
 • ввод начальной информации с клавиатуры
-![INPUT DATA](https://github.com/erdogan-deniz/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_1/resources/gifs/input_data.gif)
+![INPUT DATA](https://github.com/erdogan-deniz/University/blob/main/Magistracy/теория_чисел/лабораторные_работы/лабораторная_работа_№_1/resources/gifs/input_data.gif)
 
 А также:
 
