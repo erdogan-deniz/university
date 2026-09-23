@@ -1,0 +1,79 @@
+<!-- Inheriting the template -->
+{% extends 'template_ch.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+    📈 主页 📉
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+    <!-- Page title -->
+    <div class="lowland">
+		<h1> 简单预测 </h1>
+	</div>
+
+    <!-- The table with personal css file -->
+    <div class="home">
+        <table>
+                <tbody>
+
+                        <!-- The button to start working with the user -->
+                        <tr>
+                            <td>
+                                <form action="/form" method="get">
+                                    <div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> 开始 </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <!-- The button to set settings -->
+                        <tr>
+                            <td>
+                                <form action="/options" method="get">
+                                    <div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> 选项 </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <!-- The button to write feedback to author -->
+                        <tr>
+                            <td>
+                                <form action="/report" method="get">
+                                    <div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> 反馈意见 </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <!-- The button to open author page -->
+                        <tr>
+                            <td>
+                                <form action="/about" method="get">
+                                    <div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> 关于作者 </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+
+                </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
