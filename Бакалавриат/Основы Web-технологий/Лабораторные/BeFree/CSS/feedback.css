@@ -1,0 +1,12 @@
+body{
+    padding: 75px;
+}
+
+.error{
+    color: red;
+}
+
+
+img{
+    border: 3px double #000;
+}

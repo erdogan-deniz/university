@@ -1,0 +1,25 @@
+1)	* SELECT "Brand ID" FROM "Brands" WHERE "Year of creation" = '1916';
+	* SELECT * FROM "Brands" WHERE "Country Name" = 'USA';
+	* SELECT "Brand Name", "Brand ID" FROM "Brands" WHERE "Year of creation" > '1900';
+	* SELECT * FROM "Models" WHERE "Model ID" > '0';
+	* SELECT * FROM "Models" WHERE "Class" >= 'S';
+	* SELECT "Brand ID","Year of creation",
+	(SELECT "Model Name" FROM "Models" WHERE "Model ID" >  '1')
+	FROM 
+	"Brands"
+	WHERE
+	"Brand ID" > '5'
+
+2)	* UPDATE "Brands" SET "Country Name" = 'Russia' WHERE "Country Name" = 'Germany'
+
+3)	* INSERT INTO "Brands" ("Brand Name", "Country Name", "Year of creation", "Headquarters") VALUES ('ZEX','Russia','1945','Podolsk')
+
+4)	* DELETE FROM "Brands" WHERE "Brand ID" > '20';
+
+5)	* CREATE TABLE "Nijist" (
+	"Speed" varchar(250),
+	"Speed2" varchar(250)
+				)
+6)	* DROP TABLE "Sousa"
+
+	

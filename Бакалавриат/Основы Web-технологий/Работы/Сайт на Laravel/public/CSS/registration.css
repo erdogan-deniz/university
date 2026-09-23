@@ -1,0 +1,150 @@
+form #esc {
+    margin-top: 3px;
+}
+
+form #button {
+    height: 45px;
+    width: 150px;
+    margin-left: 36%;
+}
+
+form #input {
+    height: 45px;
+    width: 150px;
+    margin-left: 36%;
+}
+
+form .input.valid{
+  border: 2px solid green;
+}
+
+form input.invalid{
+  border: 2px solid red;
+
+}
+
+.name-error{
+  color: red;
+  display: none;
+}
+
+.name-error.show{
+  display: block;
+}
+
+.login-error{
+  color: red;
+  display: none;
+}
+
+.login-error.show{
+  display: block;
+}
+
+.password-error{
+  color: red;
+  display: none;
+}
+
+.password-error.show{
+  display: block;
+}
+
+.password2-error{
+  color: red;
+  display: none;
+}
+
+.password2-error.show{
+  display: block;
+}
+
+input[type = "email"]:valid{
+  border: 2px solid green;
+}
+
+input[type = "email"]:invalid{
+  border: 2px solid red;
+}
+
+#file:valid {
+    border: none;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="password"],
+form input[type = "email"] {
+    height: 30px;
+    width: 540px;
+}
+
+input:focus {
+    color: #212529;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    width: 540px;
+  }
+
+.autocomplete input{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .autocomplete-items div:hover {
+    background-color: palevioletred;
+    color: black;
+  }
+
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue;
+    color: #ffffff;
+  }
+
+  .inpauto {
+    border: 1px solid black;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .inpauto[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  .autocomplete-text{
+    line-height: 43px; 
+    position: relative;
+  }
+  
+form {
+	margin-left: 5px;
+    text-align: left;
+	}
+  
