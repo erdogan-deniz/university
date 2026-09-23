@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="LW1.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LW1"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Canvas x:Name="GR" Margin="0,0,0,0" Background="#FF222231" OpacityMask="Black" Height="85" Width="360" VerticalAlignment="Bottom">
+
+            <CheckBox x:Name="R" Foreground="White" BorderBrush="Black" Visibility="Visible" ClickMode="Release" IsChecked="True" Content="R" Height="20" Canvas.Left="106" Canvas.Top="6" Width="41" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <CheckBox x:Name="G" Foreground="White" BorderBrush="Black" Visibility="Visible" ClickMode="Release" IsChecked="True" Content="G" Height="20" Canvas.Left="106" Canvas.Top="31" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <CheckBox x:Name="B" Foreground="White" BorderBrush="Black" Visibility="Visible" ClickMode="Release" IsChecked="True" Content="B" Height="20" Canvas.Left="106" Canvas.Top="55" Width="41" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <ComboBox x:Name="comboBox1" Height="20" Width="104" MaxDropDownHeight="295" FontSize="9" SelectionChanged="comboBox1_SelectionChanged" HorizontalAlignment="Center" Canvas.Left="181" Canvas.Top="52" VerticalAlignment="Center" >
+                <TextBlock><Run Text="нет"/></TextBlock>
+                <TextBlock><Run Text="Сумма"/></TextBlock>
+                <TextBlock><Run Text="Разность"/></TextBlock>
+                <TextBlock><Run Text="Умножение"/></TextBlock>
+                <TextBlock><Run Text="Макс"/></TextBlock>
+                <TextBlock><Run Text="Мин"/></TextBlock>
+                <TextBlock><Run Text="Среднее"/></TextBlock>
+            </ComboBox>
+            <Slider x:Name="slider1" Height="7" Width="146" Background="White" Foreground="#FF958D8D" BorderBrush="#FFFF3333" Maximum="100" Value="101" HorizontalAlignment="Center" Canvas.Left="160" Canvas.Top="30" VerticalAlignment="Top"/>
+            <Label x:Name="label1" Content="Прозрачность" Height="22" Width="82" IsEnabled="False" Foreground="White" FontFamily="Times New Roman" FontSize="10" HorizontalAlignment="Center" Canvas.Left="192" VerticalAlignment="Top" Canvas.Top="4"/>
+            <Image x:Name="small" Height="58" Width="89" HorizontalAlignment="Left" Canvas.Top="14"   VerticalAlignment="Top" Canvas.Left="10" />
+            <Button x:Name="Top" Content="V" Height="25" Canvas.Left="322" Canvas.Top="19" Width="21" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="-180"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button x:Name="Down" Content="V" Height="25" Canvas.Left="322" Canvas.Top="45" Width="21" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.357,0.429"/>
+            <Button x:Name="Close" Content="X" Height="20" Canvas.Left="339" Width="20" Foreground="White" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.357,0.429" FontSize="9"/>
+
+        </Canvas>
+
+    </Grid>
+</UserControl>

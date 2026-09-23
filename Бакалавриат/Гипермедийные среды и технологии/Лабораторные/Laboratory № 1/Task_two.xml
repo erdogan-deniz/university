@@ -1,0 +1,55 @@
+<?xml	version="1.0"	encoding="utf-8"?>	<!— Установка версии XML и кодировки файла —>
+
+<games>	<!— Список игр —>
+	<game	name="Far Cry 3"	id="FarCry3"	desc="в то время как Far Cry и Far Cry 2 являются солидными играми, которые показали множество основных фишек серии, 
+													  именно Far Cry 3 действительно положил начало легендарности франшизы. Даже спустя восемь лет после своего выхода, 
+													  она отбрасывает большую тень на всю серию. Другие игры из серии:">
+		<!— Подсписок игр той же серии —>
+		<other	id="FarCry4">Far Cry 4</other>
+		<other	id="FarCry5">Far Cry 5</other>
+		<other	id="FarCryPrimal">Far Cry Primal</other>
+		<other	id="FarCryBloodDragon">Far Cry Blood Dragon</other>
+	</game>
+	
+	<game	name="Far Cry 4"	id="FarCry4"	desc="кират, вдохновленный Непалом, возможно, является самым впечатляющим миром во всей серии. Он не только выглядит великолепно, 
+													  но и способствует вертикальному игровому процессу. Игроки должны часто взбираться на гигантские горы, чтобы достичь цели. 
+													  К счастью, появившийся в игре вингсьют делает возвращение на землю простым и увлекательным. Важным моментом является захват 
+													  крепостей противника, а также слонов-воинов для нападения на базы. Другие игры из серии:">
+		<!— Подсписок игр той же серии —>
+		<other	id="FarCry3">Far Cry 3</other>
+		<other	id="FarCry5">Far Cry 5</other>
+		<other	id="FarCryPrimal">Far Cry Primal</other>
+		<other	id="FarCryBloodDragon">Far Cry Blood Dragon</other>
+	</game>
+	
+	<game	name="Far Cry 5"	id="FarCry5"	desc="все предыдущие части франшизы Far Cry проходили в экзотических местах. Far Cry 5 отличается тем, что отправляет нас на запад 
+													  США. Однако, несмотря на казалось бы обычную обстановку, содержит ряд основных фишек: харизматичный главный злодей, 
+													  бесконечные орды сумасшедших врагов, огромный открытый мир, непредсказуемый животный мир и динамичные бои. Другие игры из 
+													  серии:">
+		<!— Подсписок игр той же серии —>
+		<other	id="FarCry3">Far Cry 3</other>
+		<other	id="FarCry4">Far Cry 4</other>
+		<other	id="FarCryPrimal">Far Cry Primal</other>
+		<other	id="FarCryBloodDragon">Far Cry Blood Dragon</other>
+	</game>
+	
+	<game	name="Far Cry Primal"	id="FarCryPrimal"	desc="после выхода Far Cry 4 некоторые посчитали, что серия скатилась. К счастью, тогда вышел Far Cry Primal, 
+														который дал встряску. Телепортация в каменный век превращает игроков в охотников эпохи мезолита. Ubisoft даже создала 
+														язык с помощью исторических лингвистов, чтобы повысить реалистичность. Другие игры из серии:">
+		<!— Подсписок игр той же серии —>
+		<other	id="FarCry3">Far Cry 3</other>
+		<other	id="FarCry4">Far Cry 4</other>
+		<other	id="FarCry5">Far Cry 5</other>
+		<other	id="FarCryBloodDragon">Far Cry Blood Dragon</other>
+	</game>
+	
+	<game	name="Far Cry Blood Dragon"	id="FarCryBloodDragon"	desc="если кратко, это было весело! Официально являясь спин-оффом Far Cry 3, Far Cry: Blood Dragon не имеет 
+																	  ничего общего с третьей частью. Несмотря на то, что игра построена на базе Far Cry 3, она совершенно 
+																	  независима, и совершенно безумна. Другие игры из серии:">
+		<!— Подсписок игр той же серии —>
+		<other	id="FarCry3">Far Cry 3</other>
+		<other	id="FarCry4">Far Cry 4</other>
+		<other	id="FarCry5">Far Cry 5</other>
+		<other	id="FarCryPrimal">Far Cry Primal</other>
+	</game>
+</games>
