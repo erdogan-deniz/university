@@ -1,0 +1,41 @@
+/* The style of table */
+.report table {
+	width: 40%;
+	margin-left: 30%;
+    margin-top: 50px;
+}
+
+/* The style of elements of table */
+.report td, .report th {
+	height: 30px;
+	padding: 15px;
+	text-align: center;
+}
+
+/* The style of page sections */
+.report h2  {
+     color: #000000;
+    font-size: 26px;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: bold;
+    word-spacing: 8px;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-transform: none;
+    font-variant: normal;
+    text-decoration: none;
+    font-family: Segoe Print;
+}
+
+/* Buttons inder text area */
+.report_buttons_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The style of page buttons */
+.report button {
+    text-align: center;
+    margin-right : 0 !important;
+}

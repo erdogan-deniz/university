@@ -1,0 +1,769 @@
+<!-- Inheriting the template -->
+{% extends 'template_ru.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+    🖊 Сбор Данных 🖊
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+	<!-- Page title -->
+    <div class="lowland">
+		<h1> ФОРМА ДАННЫХ </h1>
+	</div>
+
+	<!-- The table with personal css file -->
+	<div class="form">
+		<table>
+			<tbody>
+				<form method="post" action="/result">
+
+					<tr>
+						<td>
+							<h5> СБОР ОСНОВНЫХ ДАННЫХ </h5>
+
+							<h3>Данный раздел посвящён сбору основной информации о студенте.</h3>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Ваш пол:</h2>
+
+							<h3>Рассматриваются только традиционные гендеры. Данный признак влияют на действия субъекта
+								на протяжении всей жизни (преимущественно за счёт гормонального фона).</h3>
+						</td>
+
+						<td>
+								<h4><input name="gender" type="radio" value="Мужской"	> Мужской </h4>
+								<h4><input name="gender" type="radio" value="Женский" required> Женский </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Ваш возраст:</h2>
+
+							<h3>Количество полных лет.</h3>
+						</td>
+
+						<td>
+							<input type="number" name="age" placeholder="18" min="16" max="50" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h5>СБОР ВНУТРЕННИХ ПРИЗНАКОВ</h5>
+
+							<h3>Сбор внутренних признаков нужен для того, чтобы учитывать факторы, которые характеризуют
+								студента как личность.</h3>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Сколько часов в день Вы спите:</h2>
+
+							<h3>Подразумевается средняя продолжительность сна (преимущественно) в учебный период.</h3>
+						</td>
+
+						<td>
+							<input type="number" name="sleep" placeholder="8" min="4" max="14" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Есть ли у Вас на постоянной основе физическая активность:</h2>
+
+							<h3>Под физической активностью подразумеваются занятия: в спортзале, в спортивных секциях,
+								в свободное время в роли спортивного хобби.</h3>
+						</td>
+
+						<td>
+							<h4><input name="activity" type="radio" value="Да"> Да </h4>
+							<h4><input name="activity" type="radio" value="Нет" required> Нет </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Какое место в Вашей жизни занимают развлечения:</h2>
+
+							<h3>Как часто Вы гуляете, посещаете торговые центры, театры, кинозалы, музеи, и т. д..</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+									<label> 1 </label>
+									<input name="entertainments" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+									<label> 2 </label>
+									<input name="entertainments" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+									<label> 3 </label>
+									<input name="entertainments" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+									<label> 4 </label>
+									<input name="entertainments" type="radio" value="4" required>
+								</div>
+
+								<div class="place_item">
+									<label> 5 </label>
+									<input name="entertainments" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько Вы уведомлены о происходящем в [мире/стране]:</h2>
+
+							<h3>Имеются в виду: новости, мемы, тренды, мода, слухи, и т. д..</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="awareness" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="awareness" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="awareness" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="awareness" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="awareness" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько Вы общительны в [группе/потоке]:</h2>
+
+							<h3>Общительность подразумевает, что Вы разговариваете с одногруппниками на темы: учёбы,
+								общих интересов. Возможно, проводите вместе время за территорией университета.</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="sociability" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="sociability" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="sociability" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="sociability" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="sociability" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Как бы Вы охарактеризовали Вашу самооценку:</h2>
+
+							<h3>Не стесняйтесь, напишите то, что Вы думаете.</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="self" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="self" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="self" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="self" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="self" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Имеется ли соревновательная черта в Вашем учебном процессе:</h2>
+
+							<h3>Подразумевается (преимущественно) соревнование между одногруппниками.</h3>
+						</td>
+
+						<td>
+							<h4><input name="competitiveness" type="radio" value="Да"> Да </h4>
+							<h4><input name="competitiveness" type="radio" value="Нет" required> Нет </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько Вы удовлетворены выбранным Вами направлением:</h2>
+
+							<h3>Поступили ба Вы снова на Ваше направление при возможности.</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="satisfaction" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="satisfaction" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="satisfaction" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="satisfaction" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="satisfaction" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Как Вы оцениваете качество образования в Вашем учебном заведении:</h2>
+
+							<h3>Под образованием подразумевается: учебные материалы, лекции/cеминары/лабораторные
+								работы, аудитории для проведения занятий, преподаватели, и т. д..</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="quality" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="quality" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="quality" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="quality" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="quality" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Как Вы считаете, знания получаемые в Вашем высшем учебном заведении [помогут/помогли]
+								Вам с трудоустройством:</h2>
+
+							<h3>Знания, которые Вы можете использовать в карьерном пути, например: ЯП
+								(языки программирования), framework-и.</h3>
+						</td>
+
+						<td>
+							<h4><input name="usefulness" type="radio" value="Да"> Да </h4>
+							<h4><input name="usefulness" type="radio" value="Нет" required> Нет </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько Вы мотивированы учиться в Вашем высшем учебном заведении:</h2>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="motivation" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="motivation" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="motivation" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="motivation" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="motivation" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько Вы тревожны по учебё:</h2>
+
+							<h3>Испытываете ли Вы стресс при экзамене, нервничаете ли при ответе у доски, волнуетесь о
+								невыполненной домашней работы.</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="anxiety" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="anxiety" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="anxiety" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="anxiety" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="anxiety" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько Вы считаете себя усердным в учёбе:</h2>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="diligence" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="diligence" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="diligence" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="diligence" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="diligence" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h5>СБОР ПРОФЕССИОНАЛЬНЫХ ПРИЗНАКОВ</h5>
+
+							<h3>Сбор профессиональных признаков нужен для того, чтобы учитывать факторы, которые
+								характеризуют способности и работоспособность студента.</h3>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Вы работаете?</h2>
+
+							<h3>Подразумевается деятельность, на которую Вы тратите от 20 часов в неделю.</h3>
+						</td>
+
+						<td>
+							<h4><input name="job" type="radio" value="Да"> Да </h4>
+							<h4><input name="job" type="radio" value="Нет" required> Нет </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>На каком курсе Вы обучаетесь:</h2>
+						</td>
+
+						<td>
+							<input type="number" name="course" placeholder="1" min="1" max="6" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Ваш средний балл в школе:</h2>
+
+							<h3>Средний балл школьного аттестата по всем предметам.</h3>
+						</td>
+
+						<td>
+							<input type="number" name="score" placeholder="1" min="3" max="10" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Имели ли Вы успех в участиях в олимпиадах:</h2>
+
+							<h3>Занимали ли призовые места в олимпиадах по любой дисциплине.</h3>
+						</td>
+
+						<td>
+							<h4><input name="success" type="radio" value="Да"> Да </h4>
+							<h4><input name="success" type="radio" value="Нет" required> Нет </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Средние баллы по ЕГЭ при поступлении:</h2>
+
+							<h3>Баллы по ЕГЭ являются основным показателем школьных знаний студента.</h3>
+						</td>
+
+						<td>
+							<input type="number" name="points" placeholder="75" min="35" max="110" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Сколько часов (в неделю) Вы уделяете учёбе:</h2>
+
+							<h3>Имеется в виду время потраченное на: выполнение домашних заданий, посещений занятий,
+								изучение материала, и т. д. (можно указать примерное значение).</h3>
+						</td>
+
+						<td>
+							<input type="number" name="education" placeholder="1" min="1" max="100" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько для Вас важно следующее (отсрочка от армии, наличии диплома, как документа,
+								и т. д.):</h2>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="importance" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="importance" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="importance" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="importance" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="importance" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h5>СБОР ВНЕШНИХ ПРИЗНАКОВ</h5>
+
+							<h3>Сбор внешних признаков нужен для того, чтобы учитывать влияние тех факторов, которые
+								студент [не/не до конца] может контролировать.</h3>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Сколько бюджетных мест на Вашем направлении:</h2>
+
+							<h3>Данный признак показывает востребованность направления (как минимум у государства).
+								Можете ввести ориентировочное число (лучше точное).</h3>
+						</td>
+
+						<td>
+							<input type="number" name="places" placeholder="100" min="0" max="500" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько Ваше направление престижное и востребованное:</h2>
+
+							<h3>По: мнению друзей, родителей, спросу государства, количеству вакансий.</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="prestige" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="prestige" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="prestige" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="prestige" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="prestige" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Регион Вашего учебного заведения:</h2>
+						</td>
+
+						<td>
+							<h4><input name="region" type="radio" value="Центральный"> Центральный</h4>
+							<h4><input name="region" type="radio" value="Дальневосточный"> Дальневосточный</h4>
+							<h4><input name="region" type="radio" value="Северо-Кавказский"> Северо-Кавказский</h4>
+							<h4><input name="region" type="radio" value="Уральский"> Уральский</h4>
+							<h4><input name="region" type="radio" value="Северо-Западный"> Северо-Западный</h4>
+							<h4><input name="region" type="radio" value="Сибирский"> Сибирский</h4>
+							<h4><input name="region" type="radio" value="Приволжский"> Приволжский</h4>
+							<h4><input name="region" type="radio" value="Южный" required> Южный</h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Насколько Вам удобно следить за Вашей успеваемостью:</h2>
+
+							<h3>Подразумевается [сайт/модульный журнал/электронная образовательная система и т. д.].</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="convenience" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="convenience" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="convenience" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="convenience" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="convenience" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Доход Вашей семьи (в рублях):</h2>
+
+							<h3>На всех членов семьи вместе взятых в месяц.</h3>
+						</td>
+
+						<td>
+							<h4><input name="income" type="radio" value="До 150 000" > До 150 000</h4>
+							<h4><input name="income" type="radio" value="От 150 000 до 350 000"> От 150 000 до 350 000</h4>
+							<h4><input name="income" type="radio" value="От 350 000" required> От 350 000</h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Мнение Ваших родственников о необходимости высшего образования:</h2>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+										<label> 1 </label>
+										<input name="necessity" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+										<label> 2 </label>
+										<input name="necessity" type="radio" value="2">
+								</div>
+
+								<div class="place_item">
+										<label> 3 </label>
+										<input name="necessity" type="radio" value="3">
+								</div>
+
+								<div class="place_item">
+										<label> 4 </label>
+										<input name="necessity" type="radio" value="4">
+								</div>
+
+								<div class="place_item">
+										<label> 5 </label>
+										<input name="necessity" type="radio" value="5" required>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Наличие высшего образования у Ваших родственников:</h2>
+
+							<h3>Преимущественно у родителей.</h3>
+						</td>
+
+						<td>
+							<h4><input name="availability" type="radio" value="Имеется"> Имеется</h4>
+							<h4><input name="availability" type="radio" value="Отсутствует" required> Отсутствует</h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="my_button_container">
+								<a href="http://127.0.0.1:5000/home">
+									<button type="button" class="my_button"><span> BACK </span></button>
+								</a>
+							</div>
+						</td>
+
+						<td>
+							  	<div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> ПРОГНОЗ </span>
+                                        </button>
+							  </div>
+						</td>
+					</tr>
+
+				</form>
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

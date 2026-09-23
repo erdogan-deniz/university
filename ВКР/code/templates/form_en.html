@@ -1,0 +1,513 @@
+<!-- Inheriting the template -->
+{% extends 'template_ru.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+    🖊 Сбор Данных 🖊
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+	<!-- Page title -->
+    <div class="lowland">
+		<h1> ФОРМА ДАННЫХ </h1>
+	</div>
+
+	<!-- The table with personal css file -->
+	<div class="form">
+		<table>
+			<tbody>
+				<form method="post" action="/result">
+
+					<tr>
+						<td>
+							<span> COLLECTING BASIC DATA `	`</span>
+
+							<h3>This section is dedicated to collecting basic information about the student.</h3>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Your Gender:</h2>
+
+							<h3>Only traditional genders are considered. This feature affects the actions of the subject
+								throughout his life (mainly due to the hormonal background).</h3>
+						</td>
+
+						<td>
+							<input name="gender" type="radio" value="Мужской" id="Male">
+
+							<label for="Male">dscada</label>
+								<h4><input name="gender" type="radio" value="Мужской"> Male </h4>
+								<h4><input name="gender" type="radio" value="Женский" required> Female </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Your Age:</h2>
+
+							<h3>The number of full years.</h3>
+						</td>
+
+						<td>
+							<input type="number" name="age" placeholder="18" min="16" max="50" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>COLLECTING INTERNAL FEATURES</span>
+
+							<h3>The collection of internal signs is necessary to take into account the factors that
+								characterize the student as a person.</h3>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How many hours a day do you sleep:</h2>
+
+							<h3>This implies the average duration of sleep (mainly) during the school period.</h3>
+						</td>
+
+						<td>
+							<input type="number" name="sleep" placeholder="8" min="4" max="14" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Do you have regular physical activity:</h2>
+
+							<h3>Physical activity refers to activities: in the gym, in sports sections, in free time as a
+								sports hobby.</h3>
+						</td>
+
+						<td>
+							<h4><input name="activity" type="radio" value="Да"> Yes </h4>
+							<h4><input name="activity" type="radio" value="Нет" required> No </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>What is the place of entertainment in your life:</h2>
+
+							<h3>How often do you walk, visit shopping malls, theaters, cinemas, museums, etc..</h3>
+						</td>
+
+						<td>
+							<div class="place_block">
+								<div class="place_item">
+									<label> 1 </label>
+									<input name="entertainments" type="radio" value="1">
+								</div>
+
+								<div class="place_item">
+									<label> 1 </label>
+									<input name="entertainments" type="radio" value="1">
+								</div>
+								<div class="place_item">
+									<label> 1 </label>
+									<input name="entertainments" type="radio" value="1">
+								</div>
+								<div class="place_item">
+									<label> 1 </label>
+									<input name="entertainments" type="radio" value="1">
+								</div>
+							<label><h4>1-<input name="entertainments" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="entertainments" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="entertainments" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="entertainments" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="entertainments" type="radio" value="5" required></h4></label>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How informed are you about what is happening in [the world/country]:</h2>
+
+							<h3>This means: news, memes, trends, fashion, rumors, etc..</h3>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="awareness" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="awareness" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="awareness" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="awareness" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="awareness" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How sociable are you in the [group/stream]:</h2>
+
+							<h3>Sociability means that you talk to your classmates about topics: studies, common interests.
+								Perhaps you spend time together outside the university.</h3>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="sociability" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="sociability" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="sociability" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="sociability" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="sociability" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How would you characterize your self-esteem:</h2>
+
+							<h3>Feel free to write what you think.</h3>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="self" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="self" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="self" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="self" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="self" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Is there a competitive trait in your learning process:</h2>
+
+							<h3>It implies (mostly) competition between classmates.</h3>
+						</td>
+
+						<td>
+							<h4><input name="competitiveness" type="radio" value="Да"> Yes </h4>
+							<h4><input name="competitiveness" type="radio" value="Нет" required> No </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How satisfied are you with the direction you have chosen:</h2>
+
+							<h3>You have applied for your referral again if possible.</h3>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="satisfaction" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="satisfaction" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="satisfaction" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="satisfaction" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="satisfaction" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How do you assess the quality of education in your educational institution:</h2>
+
+							<h3>Education means: educational materials, lectures/seminars/laboratory work, classrooms for
+								classes, teachers, etc..</h3>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="quality" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="quality" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="quality" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="quality" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="quality" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Do you think the knowledge gained at your higher education institution [will help/helped] To
+								you with employment:</h2>
+
+							<h3>Knowledge that you can use in your career path, for example, YAP (programming languages),
+								frameworks.</h3>
+						</td>
+
+						<td>
+							<h4><input name="usefulness" type="radio" value="Да"> Yes </h4>
+							<h4><input name="usefulness" type="radio" value="Нет" required> No </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How motivated are you to study at your higher education institution:</h2>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="motivation" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="motivation" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="motivation" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="motivation" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="motivation" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How anxious are you at school:</h2>
+
+							<h3>Do you experience stress during the exam, are you nervous when answering at the blackboard,
+								or are you worried about unfinished homework?</h3>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="anxiety" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="anxiety" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="anxiety" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="anxiety" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="anxiety" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How hard do you consider yourself to study:</h2>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="diligence" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="diligence" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="diligence" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="diligence" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="diligence" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>COLLECTING PROFESSIONAL FEATURES</span>
+
+							<h3>The collection of professional characteristics is necessary to take into account
+								the factors that characterize the student's abilities and performance.</h3>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Are you working:</h2>
+
+							<h3>This means an activity that you spend at least 20 hours a week on.</h3>
+						</td>
+
+						<td>
+							<h4><input name="job" type="radio" value="Да"> Yes </h4>
+							<h4><input name="job" type="radio" value="Нет" required> No </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>What course are you studying in:</h2>
+						</td>
+
+						<td>
+							<input type="number" name="course" placeholder="1" min="1" max="6" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Your average grade in school:</h2>
+
+							<h3>The average grade of the school certificate in all subjects.</h3>
+						</td>
+
+						<td>
+							<input type="number" name="score" placeholder="1" min="3" max="10" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Have you been successful in participating in the Olympiads:</h2>
+
+							<h3>Have you won prizes in Olympiads in any discipline?</h3>
+						</td>
+
+						<td>
+							<h4><input name="success" type="radio" value="Да"> Yes </h4>
+							<h4><input name="success" type="radio" value="Нет" required> No </h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Average scores on the Unified State Exam upon admission:</h2>
+
+							<h3>USE scores are the main indicator of a student's school knowledge.</h3>
+						</td>
+
+						<td>
+							<input type="number" name="points" placeholder="75" min="35" max="110" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How many hours (per week) Do you pay attention to your studies:</h2>
+
+							<h3>This refers to the time spent on doing homework, attending classes, studying material,
+								etc. (you can specify an approximate value).</h3>
+						</td>
+
+						<td>
+							<input type="number" name="education" placeholder="1" min="1" max="100" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How important is the following for you (deferral from the army, having a diploma as a
+								document, etc.):</h2>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="importance" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="importance" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="importance" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="importance" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="importance" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>COLLECTING EXTERNAL SIGNS</span>
+
+							<h3>The collection of external signs is necessary to take into account the influence
+								of those factors that the student [not / not completely] can control.</h3>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How many budget places are there in your area:</h2>
+
+							<h3>This sign shows the relevance of the direction (at least from the state). You can enter an
+								approximate number (preferably an exact one).</h3>
+						</td>
+
+						<td>
+							<input type="number" name="places" placeholder="100" min="0" max="500" required >
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How prestigious and in-demand is your direction:</h2>
+
+							<h3>According to the opinion of friends, parents, the demand of the state, the number of
+								vacancies.</h3>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="prestige" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="prestige" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="prestige" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="prestige" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="prestige" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>The region of your educational institution:</h2>
+						</td>
+
+						<td>
+							<h4> Central-<input name="region" type="radio" value="Центральный"></h4>
+							<h4> Far Eastern-<input name="region" type="radio" value="Дальневосточный"></h4>
+							<h4> North Caucasian-<input name="region" type="radio" value="Северо-Кавказский"></h4>
+							<h4> Uralsky-<input name="region" type="radio" value="Уральский"></h4>
+							<h4> Northwest-<input name="region" type="radio" value="Северо-Западный"></h4>
+							<h4> Siberian-<input name="region" type="radio" value="Сибирский"></h4>
+							<h4> Privolzhsky-<input name="region" type="radio" value="Приволжский"></h4>
+							<h4> South-<input name="region" type="radio" value="Южный" required></h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>How convenient is it for you to monitor your progress:</h2>
+
+							<h3>It means [website/modular magazine/electronic educational system, etc.].</h3>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="convenience" type="radio" value="1"></h4></label>
+							<label><h4> 2-<input name="convenience" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="convenience" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="convenience" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="convenience" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Your family's income (in rubles):</h2>
+
+							<h3>For all family members combined per month.</h3>
+						</td>
+
+						<td>
+							<h4>Up to 150,000-<input name="income" type="radio" value="До 150 000" ></h4>
+							<h4> From 150,000 to 350,000-<input name="income" type="radio" value="От 150 000 до 350 000"></h4>
+							<h4> From 350,000-<input name="income" type="radio" value="От 350 000"> required</h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>The opinion of your relatives about the need for higher education:</h2>
+						</td>
+
+						<td>
+							<label><h4>1-<input name="necessity" type="radio" value="1" ></h4></label>
+							<label><h4> 2-<input name="necessity" type="radio" value="2"></h4></label>
+							<label><h4> 3-<input name="necessity" type="radio" value="3"></h4></label>
+							<label><h4> 4-<input name="necessity" type="radio" value="4"></h4></label>
+							<label><h4> 5-<input name="necessity" type="radio" value="5" required></h4></label>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<h2>Whether your relatives have higher education:</h2>
+
+							<h3>Mostly from parents.</h3>
+						</td>
+
+						<td>
+							<h4>Have-<input name="availability" type="radio" value="Имеется"></h4>
+							<h4> Absent-<input name="availability" type="radio" value="Отсутствует" required></h4>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<a href="http://127.0.0.1:5000/home">
+								<button type="button">BACK</button>
+							</a>
+						</td>
+
+						<td>
+							<button type="submit" class="forward">PREDICT</button>
+						</td>
+					</tr>
+
+				</form>
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,92 @@
+<!-- Inheriting the template -->
+{% extends 'template_ru.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+	👤 Об Авторе 👤
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+	<!-- Page title -->
+	<div class="lowland">
+		<h1> ОБ АВТОРЕ </h1>
+	</div>
+
+	<!-- The table with personal css file -->
+	<div class="about">
+		<table style="margin-left: 24%">
+			<tbody>
+
+				<!-- The name and surname of the author of the site -->
+				<tr>
+					<td>
+						<h2> Имя и Фамилия: </h2>
+					</td>
+
+					<td>
+						<h3> Дениз Ердоган </h3>
+					</td>
+				</tr>
+
+				<!-- The author repository -->
+				<tr>
+					<td>
+						<h2> Git: </h2>
+					</td>
+
+					<td>
+						<h3>
+							<a href="https://github.com/Denzi33/Denzi33" target="_blank"> *Перейти* </a>
+						</h3>
+					</td>
+				</tr>
+
+				<!-- E-mail of the author of the site -->
+				<tr>
+					<td>
+						<h2> Электронная Почта: </h2>
+					</td>
+
+					<td>
+						<h3> erdogan33@mail.ru </h3>
+					</td>
+				</tr>
+
+				<!-- Biography of the author -->
+				<tr>
+					<td>
+						<h2> Биография: </h2>
+					</td>
+
+					<td>
+						<h3>
+							Из России. <br>
+							Data Scientist. <br>
+							Ученик школы 21. <br>
+							Двадцать два года. <br>
+							Студент университета.
+						</h3>
+					</td>
+				</tr>
+
+				<!-- The button to go to the main page -->
+				<tr>
+					<td>
+						<form action="/home" method="get">
+							<div>
+								<button type="submit" class="my_button" style="width: 200px">
+									<span> НА ГЛАВНУЮ </span>
+								</button>
+							</div>
+						</form>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!-- Inheriting the template -->
+{% extends 'template_ru.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+	☑️ Статус Сообщение ☑️
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+	<!-- Header of the page -->
+	<div class="lowland">
+		<h1> СООБЩЕНИЕ БЫЛО ОТРПАВЛЕНО </h1>
+	</div>
+
+	<!-- The table with personal css file -->
+	<div class="home">
+		<table>
+			<tbody>
+					<tr>
+
+							<!-- Button to go back -->
+							<td>
+								<div class="my_button_container">
+									<a href="http://127.0.0.1:5000/home">
+										<button type="button" class="my_button">
+											<span> НА ГЛАВНУЮ </span>
+										</button>
+									</a>
+								</div>
+							</td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

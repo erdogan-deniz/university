@@ -1,0 +1,93 @@
+<!-- Inheriting the template -->
+{% extends 'template_en.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+	👤 About Author 👤
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+	<!-- Page title -->
+	<div class="lowland">
+		<h1> ABOUT AUTHOR </h1>
+	</div>
+
+	<!-- The table with personal css file -->
+	<div class="about">
+		<table style="margin-left: 23%">
+			<tbody>
+
+				<!-- The name and surname of the author of the site -->
+				<tr>
+					<td>
+						<h2> Name and Surname: </h2>
+					</td>
+
+					<td>
+						<h3> Deniz Erdogan </h3>
+					</td>
+				</tr>
+
+				<!-- The author repository -->
+				<tr>
+					<td>
+						<h2> Git: </h2>
+					</td>
+
+					<td>
+						<h3>
+							<a href="https://github.com/Denzi33/Denzi33" target="_blank"> *GO OVER* </a>
+						</h3>
+					</td>
+				</tr>
+
+				<!-- E-mail of the author of the site -->
+				<tr>
+					<td>
+						<h2> E-mail: </h2>
+					</td>
+
+					<td>
+						<h3> erdogan33@mail.ru </h3>
+					</td>
+				</tr>
+
+				<!-- Biography of the author -->
+				<tr>
+					<td>
+						<h2> Biography: </h2>
+					</td>
+
+					<td>
+						<h3>
+							From Russia. <br>
+							Data Scientist. <br>
+							Twenty-two years old. <br>
+							Student of School 21. <br>
+							Student of University.
+						</h3>
+					</td>
+				</tr>
+
+				<!-- The button to go to the main page -->
+				<tr>
+					<td>
+						<form action="/home" method="get">
+							<div>
+								<button type="submit" class="my_button" style="width: 265px">
+									<span> TO THE MAIN PAGE </span>
+								</button>
+							</div>
+						</form>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+</div>
+{% endblock %}

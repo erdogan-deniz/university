@@ -1,0 +1,62 @@
+<!-- Inheriting the template -->
+{% extends 'template_ru.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+    📈 Результаты 📉
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+    <!-- The inscription on the website -->
+	<div class="lowland">
+		<h1> ВАШИ РЕЗУЛЬТАТЫ </h1>
+	</div>
+
+    <!-- The table with personal css file -->
+    <div class="final">
+	<table>
+		<tbody>
+        <!-- Connecting script files -->
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/confetti.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js">
+        </script>
+
+             <div>
+            <tr>
+                    <h2> Результаты пользователей: </h2>
+                    <img src="../static/images/Result.png" width="500" height="400" style="margin-left: 45px">
+            </tr>
+            <div>
+
+
+            <!-- Predictable result -->
+            <div>
+            <tr>
+                <td>
+                    <h2> Ваш прогнозируемый рейтинг в следующем семестре: {{ prediction }}/100! </h2>
+                </td>
+            <div>
+
+
+
+            </div>
+
+            <!-- Button to return the back -->
+            <tr>
+                <td>
+							<div class="my_button_container">
+								<a href="http://127.0.0.1:5000/home">
+									<button type="button" class="my_button"><span> НА ГЛАВНУЮ </span></button>
+								</a>
+							</div>
+                </td>
+            <tr>
+
+		</tbody>
+	</table>
+    </div>
+</div>
+{% endblock %}
