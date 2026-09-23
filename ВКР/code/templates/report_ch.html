@@ -1,0 +1,68 @@
+<!-- Inheriting the template -->
+{% extends 'template_ch.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+    📝 留下评论 📝
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+	<!-- Header of the page -->
+	<div class="lowland">
+		<h1> 检讨网页 </h1>
+	</div>
+
+	<!-- The table with personal css file -->
+	<div class="report">
+		<table>
+			<tbody>
+
+				<!-- Sending data for processing -->
+				<form action="report_status" method="post" >
+
+					<tr>
+						<td>
+							<h2> 把你的信息写给作者: </h2>
+						</td>
+					</tr>
+
+					<!-- Message area -->
+					<tr>
+						<td>
+							<textarea name="message" cols="75" rows="4"></textarea>
+						</td>
+					</tr>
+
+					<!-- Buttons -->
+					<tr class="report_buttons_container">
+
+						<!-- Button to go back -->
+						<td>
+							<a href="http://127.0.0.1:5000/home">
+								<button type="button" class="my_button" style="width: 100px">
+									<span> 返回 </span>
+								</button>
+							</a>
+						</td>
+
+						<!-- Button to send the message -->
+						<td>
+							<form  action="/status" method="post">
+								<button type="submit" class="my_button" style="width: 100px">
+									<span> 发送 </span>
+								</button>
+							</form>
+						</td>
+
+					</tr>
+
+				</form>
+
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

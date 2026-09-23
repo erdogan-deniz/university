@@ -1,0 +1,67 @@
+{% extends 'template.html' %}
+
+{% block tittle %}
+	👤 About Author 👤
+{% endblock %}
+
+{% block body %}
+<div>
+	<div style="margin-top: 50px">
+		<h1>ABOUT AUTHOR</h1>
+	</div>
+
+	<table class="about">
+		<tbody>
+
+			<tr>
+				<td>
+					<h2>Name Surname:</h2>
+				</td>
+
+				<td>
+					<h3>Deniz Erdogan</h3>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h2>E-mail:</h2>
+				</td>
+
+				<td>
+					<h3>erdogan33@mail.ru</h3>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h2>Git repository:</h2>
+				</td>
+
+				<td>
+					<h3><a href="https://github.com/Denzi33/Denzi33" target="_blank">*CLICK HERE*</a></h3>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h2>Biography:</h2>
+				</td>
+
+				<td>
+					<h3>22 years old. From Russia. Data Scientist. Student of University.Student of School 21.</h3>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<form action="/home" method="get">
+						<button type="submit" class="Back">BACK</button>
+					</form>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>
+{% endblock %}

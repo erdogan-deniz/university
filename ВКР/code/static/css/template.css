@@ -1,0 +1,67 @@
+/* The style of the entire page content */
+body {
+    display: flex;
+    min-height: 100vh;
+    background-size: 145%;
+    flex-direction: column;
+    background-image: url("../images/background.jpg");
+}
+
+/* The style of the site header*/
+.lowland h1 {
+    color: #000000;
+    font-size: 45px;
+    margin-top: 55px;
+    font-weight: bold;
+    word-spacing: 10px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-transform: none;
+    font-variant: normal;
+    text-decoration: none;
+    font-family: Segoe Script;
+}
+
+/* The style of the inscription of the site version*/
+.lowland h4 {
+    color: #000000;
+    font-size: 18px;
+    word-spacing: 2px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-variant: normal;
+    text-decoration: none;
+    font-family: Segoe Print;
+}
+
+/* The style of the copyright label */
+.lowland h5 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 4px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-variant: normal;
+    text-decoration: none;
+    font-family: Segoe Print;
+}
+
+/* Table style */
+main {
+    flex-grow: 1;
+}
+
+/* The style of the site's basement */
+footer {
+    padding: 5px;
+    display: grid;
+    margin-top: 55px;
+    justify-content: center;
+}

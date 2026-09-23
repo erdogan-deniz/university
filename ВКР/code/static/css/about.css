@@ -1,0 +1,45 @@
+/* The style of the table */
+.about table {
+	width: 60%;
+	margin-top: 75px;
+}
+
+/* The style of tables elements */
+.about td, th {
+	width: 40px;
+	height: 30px;
+	padding: 20px;
+	text-align: center;
+}
+
+/* The style of sections of page */
+.about h2  {
+    color: #000000;
+    font-size: 26px;
+    margin-top: 5px;
+    text-align: left;
+    font-weight: bold;
+    word-spacing: 8px;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-transform: none;
+    font-variant: normal;
+    text-decoration: none;
+    font-family: Segoe Print;
+}
+
+/* The style of information on page */
+.about h3 {
+    color: #000000;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: left;
+    word-spacing: 6px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: none;
+    font-variant: normal;
+    text-decoration: none;
+    font-family: Comic Sans MS;
+}

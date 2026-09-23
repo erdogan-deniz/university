@@ -1,0 +1,76 @@
+<!-- Inheriting the template -->
+{% extends 'template_ch.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+    ⚙️ 选项 ⚙️
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+	<div class="lowland">
+		<h1> 选项 </h1>
+	</div>
+
+	<!-- The table with personal css file -->
+	<table class="options">
+		<tbody>
+
+		<form action="/options" method="post">
+
+			<!-- Choose the site theme -->
+			<tr>
+				<td>
+					<h2> 选择网站主题: </h2>
+				</td>
+
+				<td>
+					<h4><input name="theme" type="radio" value="light" required> Light </h4>
+					<h4><input name="theme" type="radio" value="dark" required> Dark </h4>
+				</td>
+			</tr>
+
+			<!-- Choose the site language -->
+			<tr>
+				<td>
+					<h2> 选择网站的语言: </h2>
+				</td>
+
+				<td>
+					<select name="language">
+						<option value="chinese"> 中文 </option>
+						<option value="russian"> Русский </option>
+						<option value="english"> English </option>
+					</select>
+				</td>
+			</tr>
+
+
+						</tr>
+
+						<tr>
+					<td>
+						<a href="http://127.0.0.1:5000/home">
+							<button type="button" class="my_button" style="width: 200px">
+								<span> 返回 </span>
+							</button>
+						</a>
+					</td>
+
+					<td>
+						<form action="/report" method="post">
+							<button type="submit" class="my_button" style="width: 200px">
+								<span> 储蓄 </span>
+							</button>
+						</form>
+					</td>
+				</tr>
+
+			</form>
+
+		</tbody>
+	</table>
+</div>
+{% endblock %}

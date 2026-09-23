@@ -1,0 +1,79 @@
+<!-- Inheriting the template -->
+{% extends 'template_en.html' %}
+
+<!-- A block instead of a page link -->
+{% block tittle %}
+    📈 Main Page 📉
+{% endblock %}
+
+<!-- The main content of the page -->
+{% block body %}
+<div>
+
+    <!-- Page title -->
+    <div class="lowland">
+		<h1> SIMPLE PREDICT </h1>
+	</div>
+
+    <!-- The table with personal css file -->
+    <div class="home">
+        <table>
+                <tbody>
+
+                        <!-- The button to start working with the user -->
+                        <tr>
+                            <td>
+                                <form action="/form" method="get">
+                                    <div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> START </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <!-- The button to set settings -->
+                        <tr>
+                            <td>
+                                <form action="/options" method="get">
+                                    <div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> OPTIONS </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <!-- The button to write feedback to author -->
+                        <tr>
+                            <td>
+                                <form action="/report" method="get">
+                                    <div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> FEEDBACK </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+
+                        <!-- The button to open author page -->
+                        <tr>
+                            <td>
+                                <form action="/about" method="get">
+                                    <div class="my_button_container">
+                                        <button type="submit" class="my_button">
+                                            <span> ABOUT AUTHOR </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+
+                </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

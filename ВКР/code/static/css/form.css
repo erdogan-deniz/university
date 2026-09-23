@@ -1,0 +1,114 @@
+/* The style for table */
+.form {
+	width: 70%;
+	margin-left: 20%;
+    margin-top: 65px;
+}
+
+.form td, .form th {
+	width: 25%;
+	height: 40px;
+	padding: 20px;
+}
+
+.form span {
+    color: #000000;
+    font-size: 16px;
+    background-color: #ac34f7;
+    text-align: center;
+    opacity: 80%;
+    font-weight: 500;
+    word-spacing: 6px;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-transform: none;
+    font-variant: small-caps;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.form h2  {
+    color: #000000;
+    font-size: 21px;
+    text-align: left;
+    font-weight: 700;
+    word-spacing: 6px;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-transform: none;
+    font-variant: small-caps;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.form h3  {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+    word-spacing: 6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.form h4  {
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+    word-spacing: 6px;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-transform: none;
+    font-variant: small-caps;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.form h5  {
+    color: #000000;
+    font-size: 26px;
+    background-color: #ac34f7;
+    text-align: left;
+    opacity: 80%;
+    font-weight: 700;
+    word-spacing: 6px;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-transform: none;
+    font-variant: small-caps;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.form label {
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 700;
+    word-spacing: 6px;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-transform: none;
+    font-variant: small-caps;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.place_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.place_block {
+    display: flex;
+    column-gap: 6px;
+}
+
+/* The style for button of table */
+.form button {
+    text-align: left;
+}
