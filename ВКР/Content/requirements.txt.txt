@@ -1,0 +1,4 @@
+pip install flask
+pip install numpy
+pip install pandas
+pip install flask-sqlalchemy
