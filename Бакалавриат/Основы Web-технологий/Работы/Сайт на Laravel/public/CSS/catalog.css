@@ -1,0 +1,202 @@
+/* Блок с товарами и название блока */
+.container{
+}
+
+.container .pageTitle{
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+/* Блок с товарами */
+.goods{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.goods img{
+    width: 20%;
+}
+
+.goods .itemPrice{
+    font-weight: 600;
+}
+
+.goods button{
+    border: none;
+    background-color: orange;
+    width: 125px;
+    height: 50px;
+    margin-top: 15px;
+    color:white;
+    font-size: 24px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+
+.goods .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10 {
+    margin-left: 50pxs;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goods .item1 a:hover,.item2 a:hover,.item3 a:hover,.item4 a:hover,.item5 a:hover,.item6 a:hover,
+.item7 a:hover,.item8 a:hover,.item9 a:hover,.item10 a:hover
+{
+    transform: scale(1.1);
+}
+
+.item1 div,.item2 div,.item3 div,.item4 div,.item5 div,.item6 div, .item7 div,.item8 div,.item9 div,.item10 div{
+    margin-top: 5px;
+}
+
+.itemRating{
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.stars1{
+    background-repeat: repeat-x;
+    width: 120px;
+    background-size: 25px;
+    height: 35px;
+    background-image: url(../source/img/star_orange.svg);
+    background-position-y: 6px;
+    display: none;
+}
+
+
+/* Модальные окна */
+
+.popup {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease-in-out ;
+}
+.popup.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup .navigation_menu div{
+    font-size: 50px;
+}
+
+.popup .left{
+    position: absolute;
+    left: 0px;
+    top: 40%;
+}
+
+.popup .right{
+    position: absolute;
+    right: 0;
+    top: 40%;
+
+}
+
+.popup .timeandprice{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup .time {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup .time img{
+    border: 3px double black;
+}
+
+.popup .price{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup img {
+    height: 250px;
+    float: inline-end;
+}
+
+.popup .description{
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+} 
+
+.popup .description b{
+    display: block;
+    margin-top: 10px;
+}
+
+.popup .description ul{
+    margin: 10px 0 10px;
+    list-style: none;
+}
+.popup p{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+.popup_body {
+    min-height: 100%;
+    min-width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup_content {
+    background-color: white;
+    color: black;
+    max-width: 800px;
+    width: 750px;
+    padding: 30px;
+    position: relative;
+    border-radius: 15px;
+}
+.popup_close {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.popup_title {
+    font-size: 40px;
+    margin: 0 0 1em 0;
+}
+.popup_Text {
+
+}
+
+.buyButton button{
+    margin-top: 20px;
+}    
+
+

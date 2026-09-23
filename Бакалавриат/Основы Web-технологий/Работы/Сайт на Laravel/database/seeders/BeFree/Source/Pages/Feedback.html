@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../CSS/feedback.css">
+    <link rel="stylesheet" href="../../CSS/pages.css ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <h1 id="pages_text">Обратная связь</h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <form id="feedback-form" name="feedback-form">
+        <div class="inputs" >
+            <div class="email">
+                <label for="email" align="left">Email</label>
+				<br>
+                <input id="email" class="form-control" type="email" name="email" />
+            </div>
+            <div class="type-of-message">
+                <div>
+				<br>
+                    <label for="type-of-message">Категория сообщения</label>
+					<br>
+                </div>
+                <select id="type-of-message" name="type-of-message">
+				<br>
+                    <option value="1">Проблемы со входом/регистрацией</option>
+					<br>
+                    <option value="2">Проблемы с сайтом</option>
+					<br>
+                    <option value="3">Пожелание</option>
+                    <br>
+					<option value="4">Благодарность</option>
+                    <br>
+					<option value="5">Другое</option>
+                </select>
+            </div>
+            <div class="header-of-message">
+			<br>
+                <label for="message-header">Заголовок сообщения</label>
+				<br>
+                <input name="message-header" id="message-header" class="form-control" />
+            </div>
+            <div class="text-area-message">
+			<br>
+                <label for="text-area-message">Сообщение</label>
+				<br>
+                <textarea id="text-area-message" class="form-control" name="text-area-message"></textarea>
+            </div>
+            <div class="personal-data-handling">
+		<br>
+            </div>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+		<div class="submit-button">
+			<br>
+            <button type="submit" class="gradient-button" align="center">Отправить</button>
+		</div>
+
+<script>
+    $("#feedback-form").validate({
+        rules: {
+            "email": {
+                required: true,
+                email: true,
+            },
+            "message-header": "required",
+            "file-message": {
+
+            },
+            "text-area-message": {
+                required: true,
+            }
+        },
+        messages: {
+            email: {
+                required: "Почта обязательна к заполнению",
+                email: "Email неправильный"
+            },
+            "message-header": {
+                required: "Заголовок сообщения обязателен"
+            },
+            "text-area-message": {
+                required: "Сообщение обязательно к заполнению"
+            }
+        }
+    })
+
+    $("#feedback-form").submit((e) => {
+        console.log($("#feedback-form").valid());
+        if ($("#feedback-form").valid()) {
+            if (!$("#personal-data-handling").is(":checked")) {
+                alert("Вам необходимо согласиться обработкой персональных данных")
+                e.preventDefault();
+            }
+        }
+
+    })
+</script>
+
+</html>
