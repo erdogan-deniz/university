@@ -1,0 +1,35 @@
+# Нормализация переносов строк — один и тот же файл во всех проектах Дениза.
+# eol=lf держит LF и в репозитории, и в рабочей копии: убирает autocrlf-конвертацию
+# Windows и её предупреждения «LF will be replaced by CRLF». Правило коммитится
+# и действует на любой машине, в отличие от локальной настройки core.autocrlf.
+# Прецедент: 21.08.2026 правки через Python в текстовом режиме записали три файла
+# life в CRLF, два ушли в коммит. С этим файлом в коммит ушёл бы LF.
+* text=auto eol=lf
+
+# Бинарники git не нормализует и не диффит — текстовая нормализация их портит.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.heic  binary
+*.pdf   binary
+*.zip   binary
+*.docx  binary
+*.doc   binary
+*.xlsx  binary
+*.rtf   binary
+*.ttf   binary
+*.woff  binary
+*.woff2 binary
+
+# Учебные материалы этого проекта: презентации, звук, архивы, файлы Packet Tracer,
+# Multisim и LibreOffice Base.
+*.pptx  binary
+*.ppsx  binary
+*.wav   binary
+*.rar   binary
+*.pka   binary
+*.ms1[03] binary
+*.odb   binary
