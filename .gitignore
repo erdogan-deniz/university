@@ -41,6 +41,7 @@ nul
 !/.gitattributes
 !/.markdownlint-cli2.jsonc
 !/README.md
+!/LICENSE
 !/bachelor/
 !/master/
 !/thesis/
