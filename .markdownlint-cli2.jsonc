@@ -42,10 +42,10 @@
     "node_modules/**",
     ".markdownlint-cli2.jsonc",
     // Проектное: учебные материалы — чужие и старые тексты, не правим и не линтим;
-    // otlozheno — изъятый сторонний софт (CLAUDE.md, раздел 4).
+    // deferred — изъятый сторонний софт (CLAUDE.md, раздел 4).
     "bachelor/**",
     "master/**",
     "thesis/**",
-    "otlozheno/**"
+    "deferred/**"
   ]
 }
