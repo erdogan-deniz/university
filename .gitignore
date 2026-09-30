@@ -50,12 +50,23 @@ nul
 # и в отчётах ФИО руководителя и ещё пяти человек.
 /master/internships/
 
-# Сборка .NET
+# Сборка .NET и C++
 bin/
 obj/
 packages/
 .vs/
+Debug/
+Release/
 *.pdb
+*.suo
+*.aps
+*.obj
+*.ilk
+*.idb
+*.res
+*.tlog
+*.recipe
+*.lastbuildstate
 
 # Зависимости, которые ставятся по манифесту
 vendor/
