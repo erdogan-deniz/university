@@ -46,9 +46,15 @@ nul
 !/master/
 !/thesis/
 
-# Внутри открытых папок. Практика магистратуры — до чистки: в метаданных документов
-# и в отчётах ФИО руководителя и ещё пяти человек.
-/master/internships/
+# Внутри открытых папок. Практика магистратуры: наружу только отчёты за 2 семестр
+# (метаданные вычищены 30.09.2026, выложены по слову Дениза 01.10.2026). Письмо
+# руководителю, заметки и суммы — дома; практика текущего семестра — дома целиком,
+# там ФИО третьих лиц.
+/master/internships/*
+!/master/internships/semester-2/
+/master/internships/semester-2/README.md
+/master/internships/semester-2/04-letter-to-supervisor.txt
+/master/internships/semester-2/SHA256SUMS
 
 # Сборка .NET и C++
 bin/
