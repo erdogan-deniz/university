@@ -1,0 +1,82 @@
+                        УСЛОВИЯ ИСПОЛЬЗОВАНИЯ
+
+В репозитории лежат материалы трёх разных видов, и права на них разные.
+Общей лицензии на весь репозиторий нет и быть не может.
+
+
+1. МОИ РАБОТЫ — свободно, с указанием авторства
+------------------------------------------------------------------------
+
+Код, который я писал сам: папки labs/, works/, coursework/, reports/,
+thesis/, master/, а также мои ответы и решения в exam/ и credit-test/.
+
+    Исходный код                     — лицензия MIT, текст ниже.
+    Отчёты, курсовые, ВКР и прочие
+    тексты и документы               — Creative Commons Attribution 4.0
+                                       (CC BY 4.0), creativecommons.org/
+                                       licenses/by/4.0/deed.ru
+
+Берите, читайте, переиспользуйте. Единственное условие — указать автора.
+
+Copyright (c) 2020-2026 Deniz Erdogan
+
+
+2. МАТЕРИАЛЫ УНИВЕРСИТЕТА — НЕ мои, лицензия на них не распространяется
+------------------------------------------------------------------------
+
+Папки lectures/ и seminars/, методические указания, задания и вопросы
+в exam/ и credit-test/, раздаточные материалы внутри labs/.
+
+Это работа преподавателей МГТУ «СТАНКИН». Права принадлежат их авторам
+и университету. Я их не лицензирую и лицензировать не могу.
+
+Они выложены как часть моего учебного архива — чтобы было видно, по чему
+я учился, а не только что я сдал. Это не разрешение их распространять.
+
+Если вы автор такого материала и не хотите видеть его здесь — напишите
+на erdogan33@mail.ru, уберу без обсуждения.
+
+
+3. СТОРОННЕЕ ПО В СОСТАВЕ РАБОТ — по своим лицензиям
+------------------------------------------------------------------------
+
+Внутри учебных проектов есть чужие компоненты, у каждого своя лицензия:
+
+    Каскады Хаара OpenCV                haarcascade_*.xml, лицензия
+    (bachelor/artificial-intelligence-  в заголовке каждого файла
+    systems/labs/Laboratory № 1/)
+
+    Emgu CV                             License-LGPL.txt рядом
+    (там же, PhotoDetaction/)
+
+    Скелет Laravel                      MIT, см. composer.json
+    (bachelor/web-technologies-basics/
+    works/laravel-site/)
+
+Сборки этих библиотек в репозитории не лежат — ставятся по инструкциям
+SETUP.md рядом с проектами.
+
+
+========================================================================
+                     MIT License — для кода из п. 1
+========================================================================
+
+Copyright (c) 2020-2026 Deniz Erdogan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
