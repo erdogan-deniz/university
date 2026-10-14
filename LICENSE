@@ -62,8 +62,20 @@ Copyright (c) 2020-2026 Deniz Erdogan
         Licensed under Creative Commons: By Attribution 4.0 License
         http://creativecommons.org/licenses/by/4.0/
 
-Сборки этих библиотек в репозитории не лежат — ставятся по инструкциям
+    Заголовочные файлы для OpenGL       лицензии — в заголовках файлов:
+    (bachelor/computer-graphics/labs/   GLEW — Modified BSD и MIT,
+    Laboratory № 3/Code 50/             GLFW — zlib/libpng,
+    OpenGLrememberProj/: GL/, GLFW/,    GLM — MIT (Happy Bunny),
+    glm-master/, SOIL/)                 SOIL и stb_image — public domain
+
+Сборки остальных библиотек в репозитории не лежат — ставятся по инструкциям
 SETUP.md рядом с проектами.
+
+Фотографии, логотипы и товарные знаки сторонних компаний и людей на страницах
+учебных сайтов и в примерах (например, bachelor/web-technologies-basics/labs/
+BeFree/, bachelor/artificial-intelligence-systems/labs/Laboratory № 1/) принадлежат
+их правообладателям и использованы только как учебный пример. По просьбе
+правообладателя уберу — erdogan33@mail.ru.
 
 
 ========================================================================
