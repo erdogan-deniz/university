@@ -53,7 +53,7 @@
 | Операционные системы | 5 | **отлично** | [лабораторные](bachelor/operating-systems/labs/), [лекции](bachelor/operating-systems/lectures/), [зачёт](bachelor/operating-systems/credit-test/) |
 | Основы теории массового обслуживания | 3 | зачтено | [лекции](bachelor/queueing-theory-basics/lectures/), [семинары](bachelor/queueing-theory-basics/seminars/), [зачёт](bachelor/queueing-theory-basics/credit-test/) |
 | Основы теории систем | 3 | зачтено | — |
-| Программирование на языке высокого уровня | 9 | хорошо | [лабораторные](bachelor/high-level-language-programming/labs/), [курсовая](bachelor/high-level-language-programming/coursework/), [работы](bachelor/high-level-language-programming/works/), [лекции](bachelor/high-level-language-programming/lectures/), [экзамен](bachelor/high-level-language-programming/exam/) |
+| Программирование на языке высокого уровня | 9 | хорошо | [лабораторные](bachelor/high-level-language-programming/labs/), [курсовая](bachelor/high-level-language-programming/coursework/), [лекции](bachelor/high-level-language-programming/lectures/), [экзамен](bachelor/high-level-language-programming/exam/) |
 | Сети и телекоммуникации | 4 | **отлично** | [лабораторные](bachelor/networks-and-telecommunications/labs/), [работы](bachelor/networks-and-telecommunications/works/), [лекции](bachelor/networks-and-telecommunications/lectures/), [семинары](bachelor/networks-and-telecommunications/seminars/), [экзамен](bachelor/networks-and-telecommunications/exam/) |
 | Теория вероятностей, математическая статистика и случайные процессы | 3 | зачтено | — |
 | Теория конечных автоматов | 4 | **отлично** | [семинары](bachelor/finite-automata-theory/seminars/) |
