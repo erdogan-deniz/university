@@ -44,7 +44,7 @@ Copyright (c) 2020-2026 Deniz Erdogan
 
     Каскады Хаара OpenCV                haarcascade_*.xml, лицензия
     (bachelor/artificial-intelligence-  в заголовке каждого файла
-    systems/labs/Laboratory № 1/)
+    systems/labs/laboratory-01/)
 
     Emgu CV                             License-LGPL.txt рядом
     (там же, PhotoDetaction/)
@@ -64,7 +64,7 @@ Copyright (c) 2020-2026 Deniz Erdogan
 
     Заголовочные файлы для OpenGL       лицензии — в заголовках файлов:
     (bachelor/computer-graphics/labs/   GLEW — Modified BSD и MIT,
-    Laboratory № 3/Code 50/             GLFW — zlib/libpng,
+    laboratory-03/Code 50/              GLFW — zlib/libpng,
     OpenGLrememberProj/: GL/, GLFW/,    GLM — MIT (Happy Bunny),
     glm-master/, SOIL/)                 SOIL и stb_image — public domain
 
@@ -73,7 +73,7 @@ SETUP.md рядом с проектами.
 
 Фотографии, логотипы и товарные знаки сторонних компаний и людей на страницах
 учебных сайтов и в примерах (например, bachelor/web-technologies-basics/labs/
-BeFree/, bachelor/artificial-intelligence-systems/labs/Laboratory № 1/) принадлежат
+BeFree/, bachelor/artificial-intelligence-systems/labs/laboratory-01/) принадлежат
 их правообладателям и использованы только как учебный пример. По просьбе
 правообладателя уберу — erdogan33@mail.ru.
 
