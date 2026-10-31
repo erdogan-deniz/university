@@ -1,23 +1,23 @@
 """
-Test module for the get_gcd function from the calculations module.
+Test module for the get_gcd_multiplier function from the calculations module.
 
-This module contains unit tests for the get_gcd function, which calculates
-the greatest common divisor of two integers. The tests are designed
-to validate the correctness of the function across various input scenarios.
+This module contains unit tests for the get_gcd_multiplier function, which
+calculates the multiplier. The tests are designed to validate the correctness
+of the function across various input scenarios.
 
 FUNCTIONS:
-    test_get_gcd(a_number: int, b_number: int, result: int) -> None: Run
-    tests for get_gcd function.
+    test_get_gcd_multiplier(a_number: int, b_number: int, result: int) ->
+    None: Run tests for get_gcd_multiplier function.
 
 USAGE:
-    pytest test_get_gcd.py
+    pytest test_get_gcd_multiplier.py
 
 TEST CASES:
 - (1, 1) should return 1
-- (999, 3) should return 3
-- (1337, 228) should return 1
-- (1071, 462) should return 21
-- (123654789, 7) should return 1
+- (999, 3) should return 332
+- (1071, 462) should return 2
+- (1337, 228) should return 5
+- (123654789, 7) should return 17664969
 """
 
 import os
@@ -32,37 +32,37 @@ from test_data import CALCULATIONS_PACKAGE_PATH
 
 path.append(CALCULATIONS_PACKAGE_PATH)
 
-from calculations.calc_functions import get_gcd
+from calculations.calc_functions import get_gcd_multiplier
 
 
 @pytest.mark.parametrize(
     "a_number, b_number, result",
     [
         (1, 1, 1),
-        (999, 3, 3),
-        (1337, 228, 1),
-        (1071, 462, 21),
-        (123654789, 7, 1),
+        (999, 3, 332),
+        (1071, 462, 2),
+        (1337, 228, 5),
+        (123654789, 7, 17664969),
     ],
 )
-def test_get_gcd(a_number: int, b_number: int, result: int) -> None:
+def test_get_gcd_multiplier(a_number: int, b_number: int, result: int) -> None:
     """
-    Test the get_gcd function for correctness.
+    Test the get_gcd_multiplier function for correctness.
 
-    This function asserts that the output of get_gcd for  given
-    inputs a_number and b_number matches the expected result.
+    This function asserts that the output of get_gcd_multiplier
+    for  given inputs a_number and b_number matches the expected result.
 
     PARAMETERS:
         a_number (int): The first integer input for the GCD calculation.
 
         b_number (int): The second integer input for the GCD calculation.
 
-        result (int): The expected output from the get_gcd
+        result (int): The expected output from the get_gcd_multiplier
                       function for the given inputs.
 
     RAISES:
-        AssertionError: If the actual output from get_gcd
+        AssertionError: If the actual output from get_gcd_multiplier
                         does not equal the expected result.
     """
 
-    assert get_gcd(a_number, b_number) == result
+    assert get_gcd_multiplier(a_number, b_number) == result
