@@ -23,7 +23,7 @@ nul
 # преподавателей. Новая папка по умолчанию остаётся дома; выложить её — дописать строку
 # `!/<папка>/`. Ошибка здесь значит «забыл выложить», а не «выложил лишнее».
 # Дома остаются: служебное (правила, беклог, идеи, ящики),
-# semesters/, group/, status/, documents/, postgraduate/.
+# postgraduate/, а внутри master/ — semesters/, master-thesis/, coursework-2024-25/, status/, group/, documents/.
 /*
 !/.gitignore
 !/.gitattributes
@@ -32,6 +32,12 @@ nul
 !/bachelor/
 !/master/
 !/thesis/
+
+# Внутри master/ открыто только то, что названо; остальное (семестры, диссертация, приказы, группа) — дома.
+/master/*
+!/master/internships/
+!/master/mathematical-and-computer-modeling/
+!/master/number-theory/
 
 # Внутри открытых папок. Практика магистратуры: наружу только отчёты за 2 семестр
 # (метаданные вычищены 30.09.2026, выложены по слову Дениза 01.10.2026). Письмо
