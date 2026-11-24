@@ -23,7 +23,7 @@ nul
 # преподавателей. Новая папка по умолчанию остаётся дома; выложить её — дописать строку
 # `!/<папка>/`. Ошибка здесь значит «забыл выложить», а не «выложил лишнее».
 # Дома остаются: служебное (правила, беклог, идеи, ящики),
-# semesters/, group/, status/, documents/, postgraduate/, deferred/.
+# semesters/, group/, status/, documents/, postgraduate/.
 /*
 !/.gitignore
 !/.gitattributes
@@ -42,6 +42,10 @@ nul
 /master/internships/semester-2/README.md
 /master/internships/semester-2/04-letter-to-supervisor.txt
 /master/internships/semester-2/SHA256SUMS
+
+# Чужие книги (авторское право) и чужая ВКР с ФИО — только дома (24.11.2026)
+/thesis/reference-books/
+/bachelor/engineering-graphics/reference-books/
 
 # Сборка .NET и C++
 bin/
@@ -78,6 +82,7 @@ docs/_build/
 *.lib
 *.so
 *.pyd
+*.rar
 
 # Локальные настройки и секреты
 .env
